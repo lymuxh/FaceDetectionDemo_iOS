@@ -1,0 +1,192 @@
+{
+	"hsr_regressor" :
+	{
+	    "model": "./f_a/hsr_right_view_model_8L_31",
+	    "multi_view_type": "right_view",
+
+	    "output_stage_debug_image": false,
+	    "output_random_forest_debug_image": false,
+        "is_enable" : true,
+	    "output_random_forest_shift": false,
+
+	    "attribute_names": [ "left", "right", "old", "child", "sunglass" ],
+        "landmarks": [1, 3, 4, 6, 7, 9, 10, 11],
+        "landmarks_bak": [1, 3, 4, 6, 7, 9, 10, 11, 26, 27, 91, 93, 29, 96, 98, 70],
+	    "ground_truth_landmark_ids": [],
+	    "is_binary_model" : true,
+
+	    "infer_path": "",
+	    "pick_mode": 1,
+	    "use_attr_filter": false
+	},
+	"detector" :
+	{
+	    "search_area" :
+	    { 
+	        "x" : 0, "y" : 0, "w" : 6400, "h" : 6400
+	    },
+	    "inplane_rotation" :
+	    {
+	    	"is_enabled" : false,
+	        "thresholds" : [0.0, 0.0, 0.0],
+	        "rot_angles" : [0.0, -30.0, 30.0],
+	        "models" : []
+	    },
+	    "detector" :
+	    {
+	        "mode" : 0,
+	        "output": "",
+	        "threshold" : -1,
+              "model_type" : 1,
+	        "win_info_scale" : 0.2,
+            "det_model_file_type" : 3,
+	        "model_bak": "./f_d/C73-00_EC_D4_ALL_FR_shuf_LV.12.bin.3",
+	        "model": "./f_d/C73S12-04_EC_D4_R15K_All_FL_AppF_shuf_RV.12.bin.3",
+	        "overlap": 0.2,
+	        "maxWSize": 240,
+	        "maxHSize": 240,
+	        "minWSize": 120,
+	        "minHSize": 120,
+	        "minSizeRatio": 1,
+	        "scale": 1.10,
+	        "xStep": 2,
+	        "yStep": 2,
+	        "useCuda": false,
+	        "cuaBlkH": 16,
+	        "cuaBlkW": 16,
+	        "devId": 0,
+	        "isScaleImageMode":true,
+
+	        "h_a_lower": 0.15,
+	        "h_b_lower": -60,
+	        "h_a_upper": 0.14,
+	        "h_b_upper": 90,
+	        "enable_debug" : false
+	    },
+	    "edge_filter" :
+	    {
+	        "is_enabled" : false,
+	        "kernal_size" : 3,
+	        "low_thres" : 85,
+	        "thres_ratio" : 3.0,
+	        "resize_type" : 2,
+	        "sample_size" : 20,
+	        "equal_hist" : true,
+	        "scale_factor" : 1,
+	        "threshold" : 35,
+
+	        "model": ""
+	    }
+	},
+    "enable_landmark_filter" : false,
+    "enable_hog_landmark_filter" : false,
+    "hog_landmark_filter" :
+    {
+   "rect_width" : 20,
+   "rect_height" : 20,
+   "bin_size" : 4,
+   "radius" : 0.15,
+   "svm_model_file" : "./f_a/l_b_f_c_rv_16l.model",
+   "landmark_ids": [1, 3, 4, 6, 7, 9, 10, 11, 26, 27, 91, 93, 29, 96, 98, 70],
+
+   "multi_view_type" : "right_view",
+
+   "threshold" : -1.6,
+
+   "mean_shape" : {
+      "chin" : {
+         "score" : 1.0,
+         "x" : 0.4705666491054060,
+         "y" : 1.028239931464974
+      },
+      "down_out_profile_01" : {
+         "score" : 1.0,
+         "x" : -0.08616472291976734,
+         "y" : 0.6707338455949627
+      },
+      "down_out_profile_03" : {
+         "score" : 1.0,
+         "x" : 0.1452583576849342,
+         "y" : 0.9335400554515475
+      },
+      "down_out_profile_06" : {
+         "score" : 1.0,
+         "x" : 0.6121170085694305,
+         "y" : 0.8842305306072841
+      },
+      "down_out_profile_08" : {
+         "score" : 1.0,
+         "x" : 0.7171993716008821,
+         "y" : 0.6551601488435431
+      },
+      "faceType" : "",
+      "face_rect" : {
+         "h" : 0,
+         "w" : 0,
+         "x" : 0,
+         "y" : 0
+      },
+      "left_eye_left" : {
+         "score" : 1.0,
+         "x" : 0.2121840343873781,
+         "y" : 0.2716863625880719
+      },
+      "left_eye_right" : {
+         "score" : 1.0,
+         "x" : 0.3571842523378594,
+         "y" : 0.2800141351352092
+      },
+      "mouth_bottom_lip_up" : {
+         "score" : 1.0,
+         "x" : 0.5118990197944343,
+         "y" : 0.7685718129742199
+      },
+      "mouth_left" : {
+         "score" : 1.0,
+         "x" : 0.3157929607392932,
+         "y" : 0.7426238609147133
+      },
+      "mouth_right" : {
+         "score" : 1.0,
+         "x" : 0.6035191441964959,
+         "y" : 0.7383919617401878
+      },
+      "mouth_top_lip_down" : {
+         "score" : 1.0,
+         "x" : 0.5192386162104147,
+         "y" : 0.7309467434136596
+      },
+      "nose_left" : {
+         "score" : 1.0,
+         "x" : 0.4257438839996745,
+         "y" : 0.5881059847032950
+      },
+      "nose_right" : {
+         "score" : 1.0,
+         "x" : 0.6009620756455859,
+         "y" : 0.5900818040237310
+      },
+      "right_eye_left" : {
+         "score" : 1.0,
+         "x" : 0.5995966053508386,
+         "y" : 0.2828927637634032
+      },
+      "right_eye_right" : {
+         "score" : 1.0,
+         "x" : 0.7059365921952787,
+         "y" : 0.2774229361024104
+      },
+      "up_out_profile_06" : {
+         "score" : 1.0,
+         "x" : 0.4791227299433257,
+         "y" : -0.2327632607809711
+      }
+   }
+    },
+	"nms" :
+	{
+		"overlap" : 0.2,
+		"mode" : 1,
+		"score_type" : 0
+	}
+}

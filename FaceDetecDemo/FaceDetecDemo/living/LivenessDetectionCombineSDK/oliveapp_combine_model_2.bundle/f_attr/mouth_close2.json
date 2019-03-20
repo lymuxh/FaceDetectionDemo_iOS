@@ -1,0 +1,18 @@
+{
+    "threshold": 0.669635,
+    "h_distance_for_close" : 0.5,
+    "attribute_name": "mouth_close",
+    "model_file": "./f_attr/mouth_close2.compress",
+    "open_or_close": "close",
+    "udd_threshold": 0.1,
+    "lbp_extractor": {
+        "lbp_h_blocks": 10,
+        "lbp_w_blocks": 8,
+        "rect_width": 100, 
+        "rect_height": 75,
+
+        "lbp_radius": 6,
+        "lbp_point_number": 8,
+        "lbp_enable_uniform_mode": false 
+    }
+}

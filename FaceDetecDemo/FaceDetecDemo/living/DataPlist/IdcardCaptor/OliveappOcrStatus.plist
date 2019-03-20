@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ocr_status_11</key>
+	<string>请不要遮挡身份证，将身份证跟边框四角对齐</string>
+	<key>ocr_status_10</key>
+	<string>请不要遮挡身份证，将身份证跟边框四角对齐</string>
+	<key>ocr_status_9</key>
+	<string>离得太近，请将身份证跟边框四角对齐</string>
+	<key>ocr_status_8</key>
+	<string>离得太远，请将身份证跟边框四角对齐</string>
+	<key>ocr_status_7</key>
+	<string>请不要晃动</string>
+	<key>ocr_status_6</key>
+	<string>请保证身份证清晰</string>
+	<key>ocr_status_5</key>
+	<string>身份证反光，请调整光照</string>
+	<key>ocr_status_4</key>
+	<string>请保证身份证清晰</string>
+	<key>ocr_status_3</key>
+	<string>请不要遮挡身份证，将身份证跟边框四角对齐</string>
+	<key>ocr_status_2</key>
+	<string>请将身份证跟边框四角对齐，不要遮挡</string>
+	<key>ocr_status_1</key>
+	<string>请保持此姿势，不要晃动</string>
+</dict>
+</plist>

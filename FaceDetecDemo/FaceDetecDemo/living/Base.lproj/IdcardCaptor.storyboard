@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Oliveapp Idcard Captor View Controller-->
+        <scene sceneID="It2-Rc-YJa">
+            <objects>
+                <viewController storyboardIdentifier="idcardCaptorStoryboard" id="Rcp-Nb-60S" customClass="OliveappIdcardCaptorViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Pfv-YR-zAJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="ks6-fR-dCX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Zzk-fs-c6D">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iyg-PB-Ecj">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="oliveapp_face_black_shadow.png" translatesAutoresizingMaskIntoConstraints="NO" id="cun-fw-mL8" userLabel="upView">
+                                <rect key="frame" x="0.0" y="20" width="375" height="80"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="oliveapp_face_black_shadow.png" translatesAutoresizingMaskIntoConstraints="NO" id="Khh-bq-HD0" userLabel="buttomView">
+                                <rect key="frame" x="0.0" y="567" width="375" height="100"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="oliveapp_idcard_thin.png" translatesAutoresizingMaskIntoConstraints="NO" id="xTw-dR-IoO">
+                                <rect key="frame" x="40" y="100" width="295" height="467"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="xTw-dR-IoO" secondAttribute="height" multiplier="12:19" id="aB9-NX-RXp"/>
+                                </constraints>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="aB9-NX-RXp"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="oliveapp_face_black_shadow.png" translatesAutoresizingMaskIntoConstraints="NO" id="nSU-pt-t98" userLabel="leftView">
+                                <rect key="frame" x="0.0" y="100" width="40" height="467"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="V7v-bD-PLW"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="V7v-bD-PLW"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="V7v-bD-PLW"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="oliveapp_face_black_shadow.png" translatesAutoresizingMaskIntoConstraints="NO" id="3T8-ws-eCG" userLabel="rightView">
+                                <rect key="frame" x="335" y="100" width="40" height="467"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="1HA-QN-qlH"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="1HA-QN-qlH"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="1HA-QN-qlH"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kCe-P5-lLj">
+                                <rect key="frame" x="24" y="617" width="31" height="30"/>
+                                <state key="normal" title="取消">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="cancelButton:" destination="Rcp-Nb-60S" eventType="touchUpInside" id="J3Q-0k-CZe"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9tK-Go-4fc">
+                                <rect key="frame" x="353" y="0.0" width="0.0" height="667"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="19"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UW6-E5-x6g">
+                                <rect key="frame" x="163" y="597" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="3nV-Cf-t8w"/>
+                                    <constraint firstAttribute="width" secondItem="UW6-E5-x6g" secondAttribute="height" multiplier="1:1" id="lHi-gT-btX"/>
+                                </constraints>
+                                <state key="normal" image="oliveapp_take_photo_button.png"/>
+                                <connections>
+                                    <action selector="captureImage:" destination="Rcp-Nb-60S" eventType="touchUpInside" id="uoe-xZ-H3W"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="9tK-Go-4fc" secondAttribute="centerX" constant="22" id="1Hy-lh-2eD"/>
+                            <constraint firstItem="3T8-ws-eCG" firstAttribute="top" secondItem="cun-fw-mL8" secondAttribute="bottom" id="1jB-Hw-ioM"/>
+                            <constraint firstItem="ks6-fR-dCX" firstAttribute="top" secondItem="UW6-E5-x6g" secondAttribute="bottom" constant="20" id="2T7-Lj-sAa"/>
+                            <constraint firstItem="Khh-bq-HD0" firstAttribute="centerX" secondItem="Zzk-fs-c6D" secondAttribute="centerX" id="2ic-tj-rXL"/>
+                            <constraint firstItem="9tK-Go-4fc" firstAttribute="centerY" secondItem="Zzk-fs-c6D" secondAttribute="centerY" id="3nT-kq-bPH"/>
+                            <constraint firstItem="ks6-fR-dCX" firstAttribute="top" secondItem="kCe-P5-lLj" secondAttribute="bottom" constant="20" id="5PU-Gx-kR5"/>
+                            <constraint firstItem="UW6-E5-x6g" firstAttribute="centerX" secondItem="Zzk-fs-c6D" secondAttribute="centerX" id="6hb-Wg-ygd"/>
+                            <constraint firstItem="nSU-pt-t98" firstAttribute="top" secondItem="cun-fw-mL8" secondAttribute="bottom" id="8do-Gh-8Xg"/>
+                            <constraint firstItem="xTw-dR-IoO" firstAttribute="leading" secondItem="nSU-pt-t98" secondAttribute="trailing" id="9gw-gR-QZO"/>
+                            <constraint firstItem="xTw-dR-IoO" firstAttribute="centerY" secondItem="Zzk-fs-c6D" secondAttribute="centerY" id="E3X-j3-gso"/>
+                            <constraint firstItem="cun-fw-mL8" firstAttribute="centerX" secondItem="Zzk-fs-c6D" secondAttribute="centerX" id="F5r-HL-znW"/>
+                            <constraint firstItem="Iyg-PB-Ecj" firstAttribute="centerX" secondItem="Zzk-fs-c6D" secondAttribute="centerX" id="JmO-ga-XNU"/>
+                            <constraint firstItem="nSU-pt-t98" firstAttribute="leading" secondItem="Zzk-fs-c6D" secondAttribute="leading" id="Jwf-AL-f2X"/>
+                            <constraint firstItem="Khh-bq-HD0" firstAttribute="width" secondItem="Zzk-fs-c6D" secondAttribute="width" id="KES-Ag-vxY"/>
+                            <constraint firstItem="9tK-Go-4fc" firstAttribute="height" secondItem="Zzk-fs-c6D" secondAttribute="height" id="Tl2-s9-n1U"/>
+                            <constraint firstItem="kCe-P5-lLj" firstAttribute="leading" secondItem="Zzk-fs-c6D" secondAttribute="leadingMargin" constant="8" id="Ufg-FI-eti"/>
+                            <constraint firstItem="Khh-bq-HD0" firstAttribute="top" secondItem="nSU-pt-t98" secondAttribute="bottom" id="V3s-pF-yH0"/>
+                            <constraint firstItem="Iyg-PB-Ecj" firstAttribute="width" secondItem="Zzk-fs-c6D" secondAttribute="width" id="V8R-R3-UxD"/>
+                            <constraint firstItem="Khh-bq-HD0" firstAttribute="top" secondItem="xTw-dR-IoO" secondAttribute="bottom" id="WSH-e8-tTB"/>
+                            <constraint firstItem="xTw-dR-IoO" firstAttribute="centerX" secondItem="Zzk-fs-c6D" secondAttribute="centerX" id="Xhu-nl-OAO"/>
+                            <constraint firstItem="Iyg-PB-Ecj" firstAttribute="centerY" secondItem="Zzk-fs-c6D" secondAttribute="centerY" id="YZn-a1-nRg"/>
+                            <constraint firstItem="3T8-ws-eCG" firstAttribute="leading" secondItem="xTw-dR-IoO" secondAttribute="trailing" id="Zg0-Xn-N5E"/>
+                            <constraint firstItem="Iyg-PB-Ecj" firstAttribute="height" secondItem="Zzk-fs-c6D" secondAttribute="height" id="bCq-QI-ocB"/>
+                            <constraint firstItem="cun-fw-mL8" firstAttribute="width" secondItem="Zzk-fs-c6D" secondAttribute="width" id="bQk-k5-ZBK"/>
+                            <constraint firstItem="cun-fw-mL8" firstAttribute="top" secondItem="Pfv-YR-zAJ" secondAttribute="bottom" id="fah-0q-UmN"/>
+                            <constraint firstAttribute="trailing" secondItem="3T8-ws-eCG" secondAttribute="trailing" id="pdQ-JN-j2N"/>
+                            <constraint firstItem="ks6-fR-dCX" firstAttribute="top" secondItem="Khh-bq-HD0" secondAttribute="bottom" id="s8N-1O-wfy"/>
+                            <constraint firstItem="xTw-dR-IoO" firstAttribute="top" secondItem="cun-fw-mL8" secondAttribute="bottom" id="yV6-Q9-HvS"/>
+                            <constraint firstItem="Khh-bq-HD0" firstAttribute="top" secondItem="3T8-ws-eCG" secondAttribute="bottom" id="yfa-Bv-dI6"/>
+                        </constraints>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="Iyg-PB-Ecj"/>
+                                <include reference="cun-fw-mL8"/>
+                                <include reference="Khh-bq-HD0"/>
+                                <include reference="nSU-pt-t98"/>
+                                <include reference="3T8-ws-eCG"/>
+                                <include reference="kCe-P5-lLj"/>
+                                <include reference="9tK-Go-4fc"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="JmO-ga-XNU"/>
+                                <include reference="V8R-R3-UxD"/>
+                                <include reference="YZn-a1-nRg"/>
+                                <include reference="bCq-QI-ocB"/>
+                                <include reference="F5r-HL-znW"/>
+                                <include reference="bQk-k5-ZBK"/>
+                                <include reference="fah-0q-UmN"/>
+                                <include reference="8do-Gh-8Xg"/>
+                                <include reference="Jwf-AL-f2X"/>
+                                <include reference="9gw-gR-QZO"/>
+                                <include reference="E3X-j3-gso"/>
+                                <include reference="Xhu-nl-OAO"/>
+                                <include reference="yV6-Q9-HvS"/>
+                                <include reference="1jB-Hw-ioM"/>
+                                <include reference="Zg0-Xn-N5E"/>
+                                <include reference="pdQ-JN-j2N"/>
+                                <include reference="1Hy-lh-2eD"/>
+                                <include reference="3nT-kq-bPH"/>
+                                <include reference="Tl2-s9-n1U"/>
+                                <include reference="2ic-tj-rXL"/>
+                                <include reference="KES-Ag-vxY"/>
+                                <include reference="V3s-pF-yH0"/>
+                                <include reference="WSH-e8-tTB"/>
+                                <include reference="yfa-Bv-dI6"/>
+                                <include reference="5PU-Gx-kR5"/>
+                                <include reference="s8N-1O-wfy"/>
+                                <include reference="Ufg-FI-eti"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="fullView" destination="Iyg-PB-Ecj" id="LsK-cr-N4O"/>
+                        <outlet property="idCardLocation" destination="xTw-dR-IoO" id="3c0-by-8rI"/>
+                        <outlet property="mImageCaptureButton" destination="UW6-E5-x6g" id="dkc-Yr-IvF"/>
+                        <outlet property="resultLabel" destination="9tK-Go-4fc" id="ixr-9h-QEs"/>
+                        <outlet property="superFullView" destination="Zzk-fs-c6D" id="C1X-Xr-4nf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q49-gp-T0D" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1189.5" y="490.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="oliveapp_face_black_shadow.png" width="10" height="10"/>
+        <image name="oliveapp_idcard_thin.png" width="450" height="712"/>
+        <image name="oliveapp_take_photo_button.png" width="160" height="160"/>
+    </resources>
+</document>

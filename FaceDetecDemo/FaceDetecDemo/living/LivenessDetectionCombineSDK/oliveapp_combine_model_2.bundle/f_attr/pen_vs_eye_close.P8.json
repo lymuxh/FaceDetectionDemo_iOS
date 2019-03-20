@@ -1,0 +1,14 @@
+{
+    "model_path_a": "./f_attr/pen_vs_eye_close.88.P10.compress",
+    "model_path_b": "./f_attr/pen_vs_eye_close.P8B.compress",
+    "threshold_a" : -2.00,
+    "threshold_b" : -1.20,
+
+    "threshold_no_valid_a" : -2.00,
+    "threshold_no_valid_b" : -1.20,
+
+    "rot_angle_threshold" : 10,
+    "bin_size": 6,
+    "rect_height": 36,
+    "rect_width": 120
+}

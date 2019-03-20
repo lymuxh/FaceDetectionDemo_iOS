@@ -1,0 +1,72 @@
+{
+    "common_path": "/mnt/ficuseta/jthao/model_release/liveness_sdk_model/v1/",
+    "idcard_type":2,
+    "image_qualify_thre" : -3 ,
+    "effective_date_thres":[ 0.21,0.359],
+    "stable_frame_num_thres": 2,
+    "still_distance" : 30,
+    "effective_date_first_rect_center_x" : 310,
+    "effective_date_first_rect_center_y" : 335,
+    "effective_date_length" : 90,
+    "effective_date_x_range" : 40, 
+    "effective_date_y_range" : 55, 
+    "reflect_threshold":220,
+    "reflect_threshold1" : 250,
+    "reflect_point_rate1" : 0.005,
+    "reflect_threshold2" : 220,
+    "reflect_point_rate2" : 0.005,
+    "reflect_rect_size" : 200,
+    "use_reflect_filter" : true,
+    "reflect_gray_min_diff" : 30,
+    "idcard_width": 684,
+   	"idcard_height" : 432,
+    "detector" : {
+      "param": {
+          "hog_bin_size": 10,
+          "scan_rect_width": 180,
+          "scan_rect_height": 120,
+          "scan_step": 10,
+          "max_scale_image_width": 570,
+
+          "scale_num_limit": 3,
+          "scale_step": 1.2,
+          "second_model_scale": 0.6,
+
+          "detection_threshold": -3,
+          "second_model_detection_threshold": 0,
+          "early_termination_threshold": 1.5,
+
+          "enable_debug": false
+        },
+        "model_angles_clockwise": [
+            0
+        ],
+        "main_model_paths": [
+            "./i_c_o_for_client/bs/det_main_0.compress"
+        ],
+        "secondary_model_paths": [
+            "./i_c_o_for_client/bs/det_sec_0.compress"
+        ]
+      },
+      "align" : {
+        "param": {
+            "klist_ori": [0.09, 0.12, 0.15, 0.18, 0.22, 0.26, 0.30, 0.35],
+            "klist": [ 0.28,0.21],
+            "enable_debug": false
+        }
+      },
+    "rec" : {
+       "param": {
+           "hog_bin_size": 4,
+           "rect_width": 24,
+           "rect_height": 40,
+
+           "context_based_date_refine": false,
+
+           "enable_debug": false
+         },
+        "model_path": "./i_c_o_for_client/bs/number.compress"
+      },
+    "object_key_set" : []
+}
+   // "stable_distance_thres": 1000,

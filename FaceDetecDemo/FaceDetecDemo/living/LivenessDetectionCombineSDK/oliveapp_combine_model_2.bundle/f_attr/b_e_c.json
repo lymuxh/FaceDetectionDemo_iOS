@@ -1,0 +1,17 @@
+{
+    "threshold": -0.2,
+    "convert_result": false,
+    "left_or_right_eye": "both",
+    "attribute_name": "eye_close",
+    "model_file": "./f_attr/e_c.compress",
+    "lbp_extractor": {
+        "lbp_h_blocks": 3,
+        "lbp_w_blocks": 6,
+        "rect_width": 60, 
+        "rect_height": 30,
+
+        "lbp_radius": 5,
+        "lbp_point_number": 8,
+        "lbp_enable_uniform_mode": false 
+    }
+}

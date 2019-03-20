@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>hinttext_inactionerror_32</key>
+	<string>请稍稍抬头</string>
+	<key>hinttext_inactionerror_0</key>
+	<string>请正对屏幕</string>
+	<key>hinttext_inactionerror_10</key>
+	<string>请正对屏幕</string>
+	<key>hinttext_inactionerror_11</key>
+	<string>请靠近点
+随后正对屏幕</string>
+	<key>hinttext_inactionerror_12</key>
+	<string>请离远点</string>
+	<key>hinttext_inactionerror_20</key>
+	<string>光线太亮了</string>
+	<key>hinttext_inactionerror_21</key>
+	<string>光线太暗了</string>
+	<key>hinttext_inactionerror_30</key>
+	<string>请别侧脸</string>
+	<key>hinttext_inactionerror_31</key>
+	<string>请稍稍低头</string>
+</dict>
+</plist>

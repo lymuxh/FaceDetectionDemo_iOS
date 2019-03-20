@@ -1,0 +1,1281 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3F970E262221591800C68B85 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F970E252221591800C68B85 /* AppDelegate.m */; };
+		3F970E312221591900C68B85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F970E302221591900C68B85 /* Assets.xcassets */; };
+		3F970E342221591900C68B85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F970E322221591900C68B85 /* LaunchScreen.storyboard */; };
+		3F970E372221591900C68B85 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F970E362221591900C68B85 /* main.m */; };
+		3F970E412221591A00C68B85 /* FaceDetecDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F970E402221591A00C68B85 /* FaceDetecDemoTests.m */; };
+		3F970E4C2221591A00C68B85 /* FaceDetecDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F970E4B2221591A00C68B85 /* FaceDetecDemoUITests.m */; };
+		3F97102D222159B700C68B85 /* oliveapp_take_photo_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F970F89222159B700C68B85 /* oliveapp_take_photo_button.png */; };
+		3F97102E222159B700C68B85 /* oliveapp_aperture.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F970F8C222159B700C68B85 /* oliveapp_aperture.png */; };
+		3F97102F222159B700C68B85 /* oliveapp_finishclick.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F970F8D222159B700C68B85 /* oliveapp_finishclick.png */; };
+		3F971030222159B700C68B85 /* oliveapp_finish.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F970F8E222159B700C68B85 /* oliveapp_finish.png */; };
+		3F971031222159B700C68B85 /* oliveapp_passed.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F970F8F222159B700C68B85 /* oliveapp_passed.png */; };
+		3F971032222159B700C68B85 /* oliveapp_retry.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F970F90222159B700C68B85 /* oliveapp_retry.png */; };
+		3F971033222159B700C68B85 /* oliveapp_bg_ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F970F91222159B700C68B85 /* oliveapp_bg_ipad.png */; };
+		3F971034222159B700C68B85 /* oliveapp_chin_up.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F970F92222159B700C68B85 /* oliveapp_chin_up.png */; };
+		3F971035222159B700C68B85 /* oliveapp_frame_ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F970F93222159B700C68B85 /* oliveapp_frame_ipad.png */; };
+		3F971036222159B700C68B85 /* oliveapp_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F970F94222159B700C68B85 /* oliveapp_bg.png */; };
+		3F971037222159B700C68B85 /* oliveapp_left_frame.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F970F95222159B700C68B85 /* oliveapp_left_frame.png */; };
+		3F971038222159B700C68B85 /* oliveapp_failure.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F970F96222159B700C68B85 /* oliveapp_failure.png */; };
+		3F971039222159B700C68B85 /* oliveapp_righticon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F970F97222159B700C68B85 /* oliveapp_righticon.png */; };
+		3F97103A222159B700C68B85 /* oliveapp_mouth_open.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F970F98222159B700C68B85 /* oliveapp_mouth_open.png */; };
+		3F97103B222159B700C68B85 /* oliveapp_return.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F970F99222159B700C68B85 /* oliveapp_return.png */; };
+		3F97103C222159B700C68B85 /* oliveapp_wrongicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F970F9A222159B700C68B85 /* oliveapp_wrongicon.png */; };
+		3F97103D222159B700C68B85 /* oliveapp_retryclick.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F970F9B222159B700C68B85 /* oliveapp_retryclick.png */; };
+		3F97103E222159B700C68B85 /* oliveapp_right_frame.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F970F9C222159B700C68B85 /* oliveapp_right_frame.png */; };
+		3F97103F222159B700C68B85 /* oliveapp_mouth_close.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F970F9D222159B700C68B85 /* oliveapp_mouth_close.png */; };
+		3F971040222159B700C68B85 /* oliveapp_chin.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F970F9E222159B700C68B85 /* oliveapp_chin.png */; };
+		3F971041222159B700C68B85 /* oliveapp_detectionframeyellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F970F9F222159B700C68B85 /* oliveapp_detectionframeyellow.png */; };
+		3F971042222159B700C68B85 /* oliveapp_resultpagebg.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F970FA0222159B700C68B85 /* oliveapp_resultpagebg.png */; };
+		3F971043222159B700C68B85 /* oliveapp_start.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F970FA1222159B700C68B85 /* oliveapp_start.png */; };
+		3F971044222159B700C68B85 /* oliveapp_startclick.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F970FA2222159B700C68B85 /* oliveapp_startclick.png */; };
+		3F971045222159B700C68B85 /* oliveapp_bg2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F970FA3222159B700C68B85 /* oliveapp_bg2.png */; };
+		3F971046222159B700C68B85 /* oliveapp_detectionframeblue.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F970FA4222159B700C68B85 /* oliveapp_detectionframeblue.png */; };
+		3F971047222159B700C68B85 /* oliveapp_homepagebg_ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F970FA5222159B700C68B85 /* oliveapp_homepagebg_ipad.png */; };
+		3F971048222159B700C68B85 /* oliveapp_eye_blink.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F970FA6222159B700C68B85 /* oliveapp_eye_blink.png */; };
+		3F971049222159B700C68B85 /* oliveapp_homepagebg.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F970FA7222159B700C68B85 /* oliveapp_homepagebg.png */; };
+		3F97104A222159B700C68B85 /* oliveapp_returnclick.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F970FA8222159B700C68B85 /* oliveapp_returnclick.png */; };
+		3F97104B222159B700C68B85 /* oliveapp_background_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F970FA9222159B700C68B85 /* oliveapp_background_normal.png */; };
+		3F97104C222159B700C68B85 /* oliveapp_face_skeleton_minimum2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F970FAA222159B700C68B85 /* oliveapp_face_skeleton_minimum2.png */; };
+		3F97104D222159B700C68B85 /* oliveapp_background_warning.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F970FAB222159B700C68B85 /* oliveapp_background_warning.png */; };
+		3F97104E222159B700C68B85 /* oliveapp_left_frame_landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F970FAD222159B700C68B85 /* oliveapp_left_frame_landscape.png */; };
+		3F97104F222159B700C68B85 /* oliveapp_wrongicon_landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F970FAE222159B700C68B85 /* oliveapp_wrongicon_landscape.png */; };
+		3F971050222159B700C68B85 /* oliveapp_righticon_landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F970FAF222159B700C68B85 /* oliveapp_righticon_landscape.png */; };
+		3F971051222159B700C68B85 /* oliveapp_bg_landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F970FB0222159B700C68B85 /* oliveapp_bg_landscape.png */; };
+		3F971052222159B700C68B85 /* oliveapp_passed_landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F970FB1222159B700C68B85 /* oliveapp_passed_landscape.png */; };
+		3F971053222159B700C68B85 /* oliveapp_finishclick_landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F970FB2222159B700C68B85 /* oliveapp_finishclick_landscape.png */; };
+		3F971054222159B700C68B85 /* oliveapp_homepagebg_landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F970FB3222159B700C68B85 /* oliveapp_homepagebg_landscape.png */; };
+		3F971055222159B700C68B85 /* oliveapp_frame_landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F970FB4222159B700C68B85 /* oliveapp_frame_landscape.png */; };
+		3F971056222159B700C68B85 /* oliveapp_failure_landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F970FB5222159B700C68B85 /* oliveapp_failure_landscape.png */; };
+		3F971057222159B700C68B85 /* oliveapp_line_landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F970FB6222159B700C68B85 /* oliveapp_line_landscape.png */; };
+		3F971058222159B700C68B85 /* oliveapp_location_landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F970FB7222159B700C68B85 /* oliveapp_location_landscape.png */; };
+		3F971059222159B700C68B85 /* oliveapp_startclick_landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F970FB8222159B700C68B85 /* oliveapp_startclick_landscape.png */; };
+		3F97105A222159B700C68B85 /* oliveapp_right_frame_landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F970FB9222159B700C68B85 /* oliveapp_right_frame_landscape.png */; };
+		3F97105B222159B700C68B85 /* oliveapp_retryclick_landcape.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F970FBA222159B700C68B85 /* oliveapp_retryclick_landcape.png */; };
+		3F97105C222159B700C68B85 /* oliveapp_finish_landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F970FBB222159B700C68B85 /* oliveapp_finish_landscape.png */; };
+		3F97105D222159B700C68B85 /* oliveapp_return_landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F970FBC222159B700C68B85 /* oliveapp_return_landscape.png */; };
+		3F97105E222159B700C68B85 /* oliveapp_detectionframeblue_landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F970FBD222159B700C68B85 /* oliveapp_detectionframeblue_landscape.png */; };
+		3F97105F222159B700C68B85 /* oliveapp_detectionframeyellow_landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F970FBE222159B700C68B85 /* oliveapp_detectionframeyellow_landscape.png */; };
+		3F971060222159B700C68B85 /* oliveapp_resultpagebg_landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F970FBF222159B700C68B85 /* oliveapp_resultpagebg_landscape.png */; };
+		3F971061222159B700C68B85 /* oliveapp_returnclick_landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F970FC0222159B700C68B85 /* oliveapp_returnclick_landscape.png */; };
+		3F971062222159B700C68B85 /* oliveapp_start_landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F970FC1222159B700C68B85 /* oliveapp_start_landscape.png */; };
+		3F971063222159B700C68B85 /* oliveapp_retry_landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F970FC2222159B700C68B85 /* oliveapp_retry_landscape.png */; };
+		3F971064222159B700C68B85 /* oliveapp_face_black_shadow2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F970FC3222159B700C68B85 /* oliveapp_face_black_shadow2.png */; };
+		3F971065222159B700C68B85 /* oliveapp_scan_line.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F970FC5222159B700C68B85 /* oliveapp_scan_line.png */; };
+		3F971066222159B700C68B85 /* oliveapp_idcard_thin.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F970FC6222159B700C68B85 /* oliveapp_idcard_thin.png */; };
+		3F971067222159B700C68B85 /* oliveapp_face_black_shadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F970FC7222159B700C68B85 /* oliveapp_face_black_shadow.png */; };
+		3F971068222159B700C68B85 /* oliveapp_face_idcard_shade_skeleton_minimum1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F970FC8222159B700C68B85 /* oliveapp_face_idcard_shade_skeleton_minimum1.png */; };
+		3F971069222159B700C68B85 /* oliveapp_idcard_strong.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F970FC9222159B700C68B85 /* oliveapp_idcard_strong.png */; };
+		3F97106A222159B700C68B85 /* oliveapp_face_idcard_shade_skeleton_minimum2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F970FCA222159B700C68B85 /* oliveapp_face_idcard_shade_skeleton_minimum2.png */; };
+		3F97106B222159B700C68B85 /* oliveapp_step_hint_eyeclose.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3F970FCC222159B700C68B85 /* oliveapp_step_hint_eyeclose.mp3 */; };
+		3F97106C222159B700C68B85 /* oliveapp_step_hint_headup.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3F970FCD222159B700C68B85 /* oliveapp_step_hint_headup.mp3 */; };
+		3F97106D222159B700C68B85 /* oliveapp_step_hint_prestart.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3F970FCE222159B700C68B85 /* oliveapp_step_hint_prestart.mp3 */; };
+		3F97106E222159B700C68B85 /* oliveapp_step_hint_mouthopen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3F970FCF222159B700C68B85 /* oliveapp_step_hint_mouthopen.mp3 */; };
+		3F97106F222159B700C68B85 /* AudioConstants.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3F970FD2222159B700C68B85 /* AudioConstants.plist */; };
+		3F971070222159B700C68B85 /* TextConstants.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3F970FD3222159B700C68B85 /* TextConstants.plist */; };
+		3F971071222159B700C68B85 /* ActionHintConstants.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3F970FD4222159B700C68B85 /* ActionHintConstants.plist */; };
+		3F971072222159B700C68B85 /* OliveappOcrStatus.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3F970FD6222159B700C68B85 /* OliveappOcrStatus.plist */; };
+		3F971073222159B700C68B85 /* LivenessDetection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F970FD7222159B700C68B85 /* LivenessDetection.storyboard */; };
+		3F971074222159B700C68B85 /* IdcardCaptor.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F970FD9222159B700C68B85 /* IdcardCaptor.storyboard */; };
+		3F971075222159B700C68B85 /* RegistrationPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F970FDB222159B700C68B85 /* RegistrationPage.storyboard */; };
+		3F971076222159B700C68B85 /* libOliveappCombineSDK2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F970FDE222159B700C68B85 /* libOliveappCombineSDK2.a */; };
+		3F971077222159B700C68B85 /* oliveapp_combine_model_2.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3F970FDF222159B700C68B85 /* oliveapp_combine_model_2.bundle */; };
+		3F971078222159B700C68B85 /* RMDisplayLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F97100B222159B700C68B85 /* RMDisplayLabel.m */; };
+		3F971079222159B700C68B85 /* RMDownloadIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F97100C222159B700C68B85 /* RMDownloadIndicator.m */; };
+		3F97107A222159B700C68B85 /* OliveappButtonAnimationLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F971010222159B700C68B85 /* OliveappButtonAnimationLayer.m */; };
+		3F97107B222159B700C68B85 /* OliveappMouthLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F971011222159B700C68B85 /* OliveappMouthLayer.m */; };
+		3F97107C222159B700C68B85 /* OliveappChinUpLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F971015222159B700C68B85 /* OliveappChinUpLayer.m */; };
+		3F97107D222159B700C68B85 /* OliveappYellowFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F971016222159B700C68B85 /* OliveappYellowFrame.m */; };
+		3F97107E222159B700C68B85 /* OliveappChinLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F971018222159B700C68B85 /* OliveappChinLayer.m */; };
+		3F97107F222159B700C68B85 /* OliveappEyeLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F97101A222159B700C68B85 /* OliveappEyeLayer.m */; };
+		3F971080222159B700C68B85 /* OliveappBlueFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F97101B222159B700C68B85 /* OliveappBlueFrame.m */; };
+		3F971081222159B700C68B85 /* OliveappHintView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F97101E222159B700C68B85 /* OliveappHintView.m */; };
+		3F971082222159B700C68B85 /* GifView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F971021222159B700C68B85 /* GifView.m */; };
+		3F971083222159B700C68B85 /* OliveappLivenessDetectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F971027222159B700C68B85 /* OliveappLivenessDetectionViewController.m */; };
+		3F971084222159B700C68B85 /* OliveappLivenessDetectionViewController+Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F971028222159B700C68B85 /* OliveappLivenessDetectionViewController+Animation.m */; };
+		3F971085222159B700C68B85 /* OliveappIdcardCaptorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F97102B222159B700C68B85 /* OliveappIdcardCaptorViewController.m */; };
+		3F97108D2221604800C68B85 /* faceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F9710892221604800C68B85 /* faceView.m */; };
+		3F97108E2221604800C68B85 /* calculateObject.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3F97108A2221604800C68B85 /* calculateObject.mm */; };
+		3F97108F2221604800C68B85 /* UIView+ITTAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F97108C2221604800C68B85 /* UIView+ITTAdditions.m */; };
+		3F971091222160BD00C68B85 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F971090222160BD00C68B85 /* opencv2.framework */; };
+		3F971093222169E100C68B85 /* haarcascade_frontalface_alt.xml in Resources */ = {isa = PBXBuildFile; fileRef = 3F971092222169E100C68B85 /* haarcascade_frontalface_alt.xml */; };
+		3F972EBE222671DC00C68B85 /* DemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F972EBD222671DC00C68B85 /* DemoViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3F970E3D2221591A00C68B85 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F970E192221591800C68B85 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F970E202221591800C68B85;
+			remoteInfo = FaceDetecDemo;
+		};
+		3F970E482221591A00C68B85 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F970E192221591800C68B85 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F970E202221591800C68B85;
+			remoteInfo = FaceDetecDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3F970E212221591800C68B85 /* FaceDetecDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FaceDetecDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F970E242221591800C68B85 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3F970E252221591800C68B85 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3F970E302221591900C68B85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3F970E332221591900C68B85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3F970E352221591900C68B85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F970E362221591900C68B85 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3F970E3C2221591A00C68B85 /* FaceDetecDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FaceDetecDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F970E402221591A00C68B85 /* FaceDetecDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FaceDetecDemoTests.m; sourceTree = "<group>"; };
+		3F970E422221591A00C68B85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F970E472221591A00C68B85 /* FaceDetecDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FaceDetecDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F970E4B2221591A00C68B85 /* FaceDetecDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FaceDetecDemoUITests.m; sourceTree = "<group>"; };
+		3F970E4D2221591A00C68B85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F970F89222159B700C68B85 /* oliveapp_take_photo_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oliveapp_take_photo_button.png; sourceTree = "<group>"; };
+		3F970F8C222159B700C68B85 /* oliveapp_aperture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oliveapp_aperture.png; sourceTree = "<group>"; };
+		3F970F8D222159B700C68B85 /* oliveapp_finishclick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oliveapp_finishclick.png; sourceTree = "<group>"; };
+		3F970F8E222159B700C68B85 /* oliveapp_finish.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oliveapp_finish.png; sourceTree = "<group>"; };
+		3F970F8F222159B700C68B85 /* oliveapp_passed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oliveapp_passed.png; sourceTree = "<group>"; };
+		3F970F90222159B700C68B85 /* oliveapp_retry.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oliveapp_retry.png; sourceTree = "<group>"; };
+		3F970F91222159B700C68B85 /* oliveapp_bg_ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oliveapp_bg_ipad.png; sourceTree = "<group>"; };
+		3F970F92222159B700C68B85 /* oliveapp_chin_up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oliveapp_chin_up.png; sourceTree = "<group>"; };
+		3F970F93222159B700C68B85 /* oliveapp_frame_ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oliveapp_frame_ipad.png; sourceTree = "<group>"; };
+		3F970F94222159B700C68B85 /* oliveapp_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oliveapp_bg.png; sourceTree = "<group>"; };
+		3F970F95222159B700C68B85 /* oliveapp_left_frame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oliveapp_left_frame.png; sourceTree = "<group>"; };
+		3F970F96222159B700C68B85 /* oliveapp_failure.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oliveapp_failure.png; sourceTree = "<group>"; };
+		3F970F97222159B700C68B85 /* oliveapp_righticon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oliveapp_righticon.png; sourceTree = "<group>"; };
+		3F970F98222159B700C68B85 /* oliveapp_mouth_open.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oliveapp_mouth_open.png; sourceTree = "<group>"; };
+		3F970F99222159B700C68B85 /* oliveapp_return.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oliveapp_return.png; sourceTree = "<group>"; };
+		3F970F9A222159B700C68B85 /* oliveapp_wrongicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oliveapp_wrongicon.png; sourceTree = "<group>"; };
+		3F970F9B222159B700C68B85 /* oliveapp_retryclick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oliveapp_retryclick.png; sourceTree = "<group>"; };
+		3F970F9C222159B700C68B85 /* oliveapp_right_frame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oliveapp_right_frame.png; sourceTree = "<group>"; };
+		3F970F9D222159B700C68B85 /* oliveapp_mouth_close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oliveapp_mouth_close.png; sourceTree = "<group>"; };
+		3F970F9E222159B700C68B85 /* oliveapp_chin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oliveapp_chin.png; sourceTree = "<group>"; };
+		3F970F9F222159B700C68B85 /* oliveapp_detectionframeyellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oliveapp_detectionframeyellow.png; sourceTree = "<group>"; };
+		3F970FA0222159B700C68B85 /* oliveapp_resultpagebg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oliveapp_resultpagebg.png; sourceTree = "<group>"; };
+		3F970FA1222159B700C68B85 /* oliveapp_start.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oliveapp_start.png; sourceTree = "<group>"; };
+		3F970FA2222159B700C68B85 /* oliveapp_startclick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oliveapp_startclick.png; sourceTree = "<group>"; };
+		3F970FA3222159B700C68B85 /* oliveapp_bg2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oliveapp_bg2.png; sourceTree = "<group>"; };
+		3F970FA4222159B700C68B85 /* oliveapp_detectionframeblue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oliveapp_detectionframeblue.png; sourceTree = "<group>"; };
+		3F970FA5222159B700C68B85 /* oliveapp_homepagebg_ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oliveapp_homepagebg_ipad.png; sourceTree = "<group>"; };
+		3F970FA6222159B700C68B85 /* oliveapp_eye_blink.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oliveapp_eye_blink.png; sourceTree = "<group>"; };
+		3F970FA7222159B700C68B85 /* oliveapp_homepagebg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oliveapp_homepagebg.png; sourceTree = "<group>"; };
+		3F970FA8222159B700C68B85 /* oliveapp_returnclick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oliveapp_returnclick.png; sourceTree = "<group>"; };
+		3F970FA9222159B700C68B85 /* oliveapp_background_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oliveapp_background_normal.png; sourceTree = "<group>"; };
+		3F970FAA222159B700C68B85 /* oliveapp_face_skeleton_minimum2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oliveapp_face_skeleton_minimum2.png; sourceTree = "<group>"; };
+		3F970FAB222159B700C68B85 /* oliveapp_background_warning.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oliveapp_background_warning.png; sourceTree = "<group>"; };
+		3F970FAD222159B700C68B85 /* oliveapp_left_frame_landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oliveapp_left_frame_landscape.png; sourceTree = "<group>"; };
+		3F970FAE222159B700C68B85 /* oliveapp_wrongicon_landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oliveapp_wrongicon_landscape.png; sourceTree = "<group>"; };
+		3F970FAF222159B700C68B85 /* oliveapp_righticon_landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oliveapp_righticon_landscape.png; sourceTree = "<group>"; };
+		3F970FB0222159B700C68B85 /* oliveapp_bg_landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oliveapp_bg_landscape.png; sourceTree = "<group>"; };
+		3F970FB1222159B700C68B85 /* oliveapp_passed_landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oliveapp_passed_landscape.png; sourceTree = "<group>"; };
+		3F970FB2222159B700C68B85 /* oliveapp_finishclick_landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oliveapp_finishclick_landscape.png; sourceTree = "<group>"; };
+		3F970FB3222159B700C68B85 /* oliveapp_homepagebg_landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oliveapp_homepagebg_landscape.png; sourceTree = "<group>"; };
+		3F970FB4222159B700C68B85 /* oliveapp_frame_landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oliveapp_frame_landscape.png; sourceTree = "<group>"; };
+		3F970FB5222159B700C68B85 /* oliveapp_failure_landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oliveapp_failure_landscape.png; sourceTree = "<group>"; };
+		3F970FB6222159B700C68B85 /* oliveapp_line_landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oliveapp_line_landscape.png; sourceTree = "<group>"; };
+		3F970FB7222159B700C68B85 /* oliveapp_location_landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oliveapp_location_landscape.png; sourceTree = "<group>"; };
+		3F970FB8222159B700C68B85 /* oliveapp_startclick_landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oliveapp_startclick_landscape.png; sourceTree = "<group>"; };
+		3F970FB9222159B700C68B85 /* oliveapp_right_frame_landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oliveapp_right_frame_landscape.png; sourceTree = "<group>"; };
+		3F970FBA222159B700C68B85 /* oliveapp_retryclick_landcape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oliveapp_retryclick_landcape.png; sourceTree = "<group>"; };
+		3F970FBB222159B700C68B85 /* oliveapp_finish_landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oliveapp_finish_landscape.png; sourceTree = "<group>"; };
+		3F970FBC222159B700C68B85 /* oliveapp_return_landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oliveapp_return_landscape.png; sourceTree = "<group>"; };
+		3F970FBD222159B700C68B85 /* oliveapp_detectionframeblue_landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oliveapp_detectionframeblue_landscape.png; sourceTree = "<group>"; };
+		3F970FBE222159B700C68B85 /* oliveapp_detectionframeyellow_landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oliveapp_detectionframeyellow_landscape.png; sourceTree = "<group>"; };
+		3F970FBF222159B700C68B85 /* oliveapp_resultpagebg_landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oliveapp_resultpagebg_landscape.png; sourceTree = "<group>"; };
+		3F970FC0222159B700C68B85 /* oliveapp_returnclick_landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oliveapp_returnclick_landscape.png; sourceTree = "<group>"; };
+		3F970FC1222159B700C68B85 /* oliveapp_start_landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oliveapp_start_landscape.png; sourceTree = "<group>"; };
+		3F970FC2222159B700C68B85 /* oliveapp_retry_landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oliveapp_retry_landscape.png; sourceTree = "<group>"; };
+		3F970FC3222159B700C68B85 /* oliveapp_face_black_shadow2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oliveapp_face_black_shadow2.png; sourceTree = "<group>"; };
+		3F970FC5222159B700C68B85 /* oliveapp_scan_line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oliveapp_scan_line.png; sourceTree = "<group>"; };
+		3F970FC6222159B700C68B85 /* oliveapp_idcard_thin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oliveapp_idcard_thin.png; sourceTree = "<group>"; };
+		3F970FC7222159B700C68B85 /* oliveapp_face_black_shadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oliveapp_face_black_shadow.png; sourceTree = "<group>"; };
+		3F970FC8222159B700C68B85 /* oliveapp_face_idcard_shade_skeleton_minimum1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oliveapp_face_idcard_shade_skeleton_minimum1.png; sourceTree = "<group>"; };
+		3F970FC9222159B700C68B85 /* oliveapp_idcard_strong.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oliveapp_idcard_strong.png; sourceTree = "<group>"; };
+		3F970FCA222159B700C68B85 /* oliveapp_face_idcard_shade_skeleton_minimum2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oliveapp_face_idcard_shade_skeleton_minimum2.png; sourceTree = "<group>"; };
+		3F970FCC222159B700C68B85 /* oliveapp_step_hint_eyeclose.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = oliveapp_step_hint_eyeclose.mp3; sourceTree = "<group>"; };
+		3F970FCD222159B700C68B85 /* oliveapp_step_hint_headup.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = oliveapp_step_hint_headup.mp3; sourceTree = "<group>"; };
+		3F970FCE222159B700C68B85 /* oliveapp_step_hint_prestart.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = oliveapp_step_hint_prestart.mp3; sourceTree = "<group>"; };
+		3F970FCF222159B700C68B85 /* oliveapp_step_hint_mouthopen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = oliveapp_step_hint_mouthopen.mp3; sourceTree = "<group>"; };
+		3F970FD2222159B700C68B85 /* AudioConstants.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AudioConstants.plist; sourceTree = "<group>"; };
+		3F970FD3222159B700C68B85 /* TextConstants.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TextConstants.plist; sourceTree = "<group>"; };
+		3F970FD4222159B700C68B85 /* ActionHintConstants.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ActionHintConstants.plist; sourceTree = "<group>"; };
+		3F970FD6222159B700C68B85 /* OliveappOcrStatus.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = OliveappOcrStatus.plist; sourceTree = "<group>"; };
+		3F970FD8222159B700C68B85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LivenessDetection.storyboard; sourceTree = "<group>"; };
+		3F970FDA222159B700C68B85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/IdcardCaptor.storyboard; sourceTree = "<group>"; };
+		3F970FDC222159B700C68B85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/RegistrationPage.storyboard; sourceTree = "<group>"; };
+		3F970FDE222159B700C68B85 /* libOliveappCombineSDK2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libOliveappCombineSDK2.a; sourceTree = "<group>"; };
+		3F970FDF222159B700C68B85 /* oliveapp_combine_model_2.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = oliveapp_combine_model_2.bundle; sourceTree = "<group>"; };
+		3F970FE1222159B700C68B85 /* OliveappPrestartValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OliveappPrestartValidator.h; sourceTree = "<group>"; };
+		3F970FE2222159B700C68B85 /* OliveappDetectedFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OliveappDetectedFrame.h; sourceTree = "<group>"; };
+		3F970FE3222159B700C68B85 /* OliveappAsyncLivenessDetectorDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OliveappAsyncLivenessDetectorDelegate.h; sourceTree = "<group>"; };
+		3F970FE4222159B700C68B85 /* OliveappBase64Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OliveappBase64Helper.h; sourceTree = "<group>"; };
+		3F970FE5222159B700C68B85 /* OliveappSessionManagerConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OliveappSessionManagerConfig.h; sourceTree = "<group>"; };
+		3F970FE6222159B700C68B85 /* OliveappErrorHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OliveappErrorHelper.h; sourceTree = "<group>"; };
+		3F970FE7222159B700C68B85 /* OliveappFaceRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OliveappFaceRect.h; sourceTree = "<group>"; };
+		3F970FE8222159B700C68B85 /* OliveappAsyncIdcardCaptorDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OliveappAsyncIdcardCaptorDelegate.h; sourceTree = "<group>"; };
+		3F970FE9222159B700C68B85 /* OliveappTimeUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OliveappTimeUtility.h; sourceTree = "<group>"; };
+		3F970FEA222159B700C68B85 /* OliveappLivenessDataType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OliveappLivenessDataType.h; sourceTree = "<group>"; };
+		3F970FEB222159B700C68B85 /* OliveappCameraImageCaptureDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OliveappCameraImageCaptureDelegate.h; sourceTree = "<group>"; };
+		3F970FEC222159B700C68B85 /* OliveappVerificationControllerWithoutPrestart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OliveappVerificationControllerWithoutPrestart.h; sourceTree = "<group>"; };
+		3F970FED222159B700C68B85 /* OliveappUserRegistrationStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OliveappUserRegistrationStatus.h; sourceTree = "<group>"; };
+		3F970FEE222159B700C68B85 /* OliveappCaptureDatabaseImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OliveappCaptureDatabaseImageViewController.h; sourceTree = "<group>"; };
+		3F970FEF222159B700C68B85 /* OliveappExtraInfoHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OliveappExtraInfoHelper.h; sourceTree = "<group>"; };
+		3F970FF0222159B700C68B85 /* OliveappCaptureRecentPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OliveappCaptureRecentPhotoViewController.h; sourceTree = "<group>"; };
+		3F970FF1222159B700C68B85 /* OliveappApplicationParameter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OliveappApplicationParameter.h; sourceTree = "<group>"; };
+		3F970FF2222159B700C68B85 /* OliveappStructLivenessFrameResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OliveappStructLivenessFrameResult.h; sourceTree = "<group>"; };
+		3F970FF3222159B700C68B85 /* OliveappVerificationControllerFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OliveappVerificationControllerFactory.h; sourceTree = "<group>"; };
+		3F970FF4222159B700C68B85 /* OliveappFaceInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OliveappFaceInfo.h; sourceTree = "<group>"; };
+		3F970FF5222159B700C68B85 /* OliveappFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OliveappFileManager.h; sourceTree = "<group>"; };
+		3F970FF6222159B700C68B85 /* OliveappCameraPreviewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OliveappCameraPreviewController.h; sourceTree = "<group>"; };
+		3F970FF7222159B700C68B85 /* OliveappImageForVerifyConf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OliveappImageForVerifyConf.h; sourceTree = "<group>"; };
+		3F970FF8222159B700C68B85 /* OliveappVerificationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OliveappVerificationDelegate.h; sourceTree = "<group>"; };
+		3F970FF9222159B700C68B85 /* OliveappStructOcrFrameResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OliveappStructOcrFrameResult.h; sourceTree = "<group>"; };
+		3F970FFA222159B700C68B85 /* OliveappAsyncPrestartValidatorDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OliveappAsyncPrestartValidatorDelegate.h; sourceTree = "<group>"; };
+		3F970FFB222159B700C68B85 /* OliveappViewUpdateEventDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OliveappViewUpdateEventDelegate.h; sourceTree = "<group>"; };
+		3F970FFC222159B700C68B85 /* OliveappVerificationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OliveappVerificationController.h; sourceTree = "<group>"; };
+		3F970FFD222159B700C68B85 /* OliveappCaptureIDCardPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OliveappCaptureIDCardPhotoViewController.h; sourceTree = "<group>"; };
+		3F970FFE222159B700C68B85 /* OliveappPhotoImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OliveappPhotoImage.h; sourceTree = "<group>"; };
+		3F970FFF222159B700C68B85 /* OliveappCameraPreviewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OliveappCameraPreviewDelegate.h; sourceTree = "<group>"; };
+		3F971000222159B700C68B85 /* OliveappAsyncIdcardCaptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OliveappAsyncIdcardCaptor.h; sourceTree = "<group>"; };
+		3F971001222159B700C68B85 /* OliveappOnDatabaseImageCapturedEventListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OliveappOnDatabaseImageCapturedEventListener.h; sourceTree = "<group>"; };
+		3F971002222159B700C68B85 /* LRMacroDefinitionHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRMacroDefinitionHeader.h; sourceTree = "<group>"; };
+		3F971003222159B700C68B85 /* OliveappDeviceHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OliveappDeviceHelper.h; sourceTree = "<group>"; };
+		3F971004222159B700C68B85 /* OliveappIdcardVerificationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OliveappIdcardVerificationController.h; sourceTree = "<group>"; };
+		3F971005222159B700C68B85 /* OliveappImageUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OliveappImageUtility.h; sourceTree = "<group>"; };
+		3F971006222159B700C68B85 /* OliveappUserRegisterImageType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OliveappUserRegisterImageType.h; sourceTree = "<group>"; };
+		3F971007222159B700C68B85 /* OliveappLivenessDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OliveappLivenessDetector.h; sourceTree = "<group>"; };
+		3F97100A222159B700C68B85 /* RMDownloadIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMDownloadIndicator.h; sourceTree = "<group>"; };
+		3F97100B222159B700C68B85 /* RMDisplayLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMDisplayLabel.m; sourceTree = "<group>"; };
+		3F97100C222159B700C68B85 /* RMDownloadIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMDownloadIndicator.m; sourceTree = "<group>"; };
+		3F97100D222159B700C68B85 /* RMDisplayLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMDisplayLabel.h; sourceTree = "<group>"; };
+		3F97100F222159B700C68B85 /* OliveappChinLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OliveappChinLayer.h; sourceTree = "<group>"; };
+		3F971010222159B700C68B85 /* OliveappButtonAnimationLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OliveappButtonAnimationLayer.m; sourceTree = "<group>"; };
+		3F971011222159B700C68B85 /* OliveappMouthLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OliveappMouthLayer.m; sourceTree = "<group>"; };
+		3F971012222159B700C68B85 /* OliveappBlueFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OliveappBlueFrame.h; sourceTree = "<group>"; };
+		3F971013222159B700C68B85 /* OliveappEyeLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OliveappEyeLayer.h; sourceTree = "<group>"; };
+		3F971014222159B700C68B85 /* OliveappHintView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OliveappHintView.h; sourceTree = "<group>"; };
+		3F971015222159B700C68B85 /* OliveappChinUpLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OliveappChinUpLayer.m; sourceTree = "<group>"; };
+		3F971016222159B700C68B85 /* OliveappYellowFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OliveappYellowFrame.m; sourceTree = "<group>"; };
+		3F971017222159B700C68B85 /* OliveappButtonAnimationLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OliveappButtonAnimationLayer.h; sourceTree = "<group>"; };
+		3F971018222159B700C68B85 /* OliveappChinLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OliveappChinLayer.m; sourceTree = "<group>"; };
+		3F971019222159B700C68B85 /* OliveappMouthLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OliveappMouthLayer.h; sourceTree = "<group>"; };
+		3F97101A222159B700C68B85 /* OliveappEyeLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OliveappEyeLayer.m; sourceTree = "<group>"; };
+		3F97101B222159B700C68B85 /* OliveappBlueFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OliveappBlueFrame.m; sourceTree = "<group>"; };
+		3F97101C222159B700C68B85 /* OliveappChinUpLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OliveappChinUpLayer.h; sourceTree = "<group>"; };
+		3F97101D222159B700C68B85 /* OliveappYellowFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OliveappYellowFrame.h; sourceTree = "<group>"; };
+		3F97101E222159B700C68B85 /* OliveappHintView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OliveappHintView.m; sourceTree = "<group>"; };
+		3F971020222159B700C68B85 /* GifView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GifView.h; sourceTree = "<group>"; };
+		3F971021222159B700C68B85 /* GifView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GifView.m; sourceTree = "<group>"; };
+		3F971024222159B700C68B85 /* OliveappLivenessDetectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OliveappLivenessDetectionViewController.h; sourceTree = "<group>"; };
+		3F971025222159B700C68B85 /* OliveappLivenessResultDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OliveappLivenessResultDelegate.h; sourceTree = "<group>"; };
+		3F971026222159B700C68B85 /* OliveappLivenessDetectionViewController+Animation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OliveappLivenessDetectionViewController+Animation.h"; sourceTree = "<group>"; };
+		3F971027222159B700C68B85 /* OliveappLivenessDetectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OliveappLivenessDetectionViewController.m; sourceTree = "<group>"; };
+		3F971028222159B700C68B85 /* OliveappLivenessDetectionViewController+Animation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "OliveappLivenessDetectionViewController+Animation.m"; sourceTree = "<group>"; };
+		3F97102A222159B700C68B85 /* OliveappIdcardCaptorResultDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OliveappIdcardCaptorResultDelegate.h; sourceTree = "<group>"; };
+		3F97102B222159B700C68B85 /* OliveappIdcardCaptorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OliveappIdcardCaptorViewController.m; sourceTree = "<group>"; };
+		3F97102C222159B700C68B85 /* OliveappIdcardCaptorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OliveappIdcardCaptorViewController.h; sourceTree = "<group>"; };
+		3F9710872221604800C68B85 /* faceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = faceView.h; sourceTree = "<group>"; };
+		3F9710882221604800C68B85 /* UIView+ITTAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ITTAdditions.h"; sourceTree = "<group>"; };
+		3F9710892221604800C68B85 /* faceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = faceView.m; sourceTree = "<group>"; };
+		3F97108A2221604800C68B85 /* calculateObject.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = calculateObject.mm; sourceTree = "<group>"; };
+		3F97108B2221604800C68B85 /* calculateObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = calculateObject.h; sourceTree = "<group>"; };
+		3F97108C2221604800C68B85 /* UIView+ITTAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ITTAdditions.m"; sourceTree = "<group>"; };
+		3F971090222160BD00C68B85 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		3F971092222169E100C68B85 /* haarcascade_frontalface_alt.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_alt.xml; sourceTree = "<group>"; };
+		3F972EBC222671DC00C68B85 /* DemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoViewController.h; sourceTree = "<group>"; };
+		3F972EBD222671DC00C68B85 /* DemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3F970E1E2221591800C68B85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F971091222160BD00C68B85 /* opencv2.framework in Frameworks */,
+				3F971076222159B700C68B85 /* libOliveappCombineSDK2.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F970E392221591A00C68B85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F970E442221591A00C68B85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3F970E182221591800C68B85 = {
+			isa = PBXGroup;
+			children = (
+				3F970E232221591800C68B85 /* FaceDetecDemo */,
+				3F970E3F2221591A00C68B85 /* FaceDetecDemoTests */,
+				3F970E4A2221591A00C68B85 /* FaceDetecDemoUITests */,
+				3F970E222221591800C68B85 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3F970E222221591800C68B85 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3F970E212221591800C68B85 /* FaceDetecDemo.app */,
+				3F970E3C2221591A00C68B85 /* FaceDetecDemoTests.xctest */,
+				3F970E472221591A00C68B85 /* FaceDetecDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3F970E232221591800C68B85 /* FaceDetecDemo */ = {
+			isa = PBXGroup;
+			children = (
+				3F971090222160BD00C68B85 /* opencv2.framework */,
+				3F9710862221604800C68B85 /* extra */,
+				3F970F85222159B700C68B85 /* living */,
+				3F970E242221591800C68B85 /* AppDelegate.h */,
+				3F970E252221591800C68B85 /* AppDelegate.m */,
+				3F970E302221591900C68B85 /* Assets.xcassets */,
+				3F970E322221591900C68B85 /* LaunchScreen.storyboard */,
+				3F970E352221591900C68B85 /* Info.plist */,
+				3F970E362221591900C68B85 /* main.m */,
+				3F972EBC222671DC00C68B85 /* DemoViewController.h */,
+				3F972EBD222671DC00C68B85 /* DemoViewController.m */,
+			);
+			path = FaceDetecDemo;
+			sourceTree = "<group>";
+		};
+		3F970E3F2221591A00C68B85 /* FaceDetecDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				3F970E402221591A00C68B85 /* FaceDetecDemoTests.m */,
+				3F970E422221591A00C68B85 /* Info.plist */,
+			);
+			path = FaceDetecDemoTests;
+			sourceTree = "<group>";
+		};
+		3F970E4A2221591A00C68B85 /* FaceDetecDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3F970E4B2221591A00C68B85 /* FaceDetecDemoUITests.m */,
+				3F970E4D2221591A00C68B85 /* Info.plist */,
+			);
+			path = FaceDetecDemoUITests;
+			sourceTree = "<group>";
+		};
+		3F970F85222159B700C68B85 /* living */ = {
+			isa = PBXGroup;
+			children = (
+				3F970F86222159B700C68B85 /* Resources */,
+				3F970FD0222159B700C68B85 /* DataPlist */,
+				3F970FD7222159B700C68B85 /* LivenessDetection.storyboard */,
+				3F970FD9222159B700C68B85 /* IdcardCaptor.storyboard */,
+				3F970FDB222159B700C68B85 /* RegistrationPage.storyboard */,
+				3F970FDD222159B700C68B85 /* LivenessDetectionCombineSDK */,
+				3F971008222159B700C68B85 /* UIComponents */,
+				3F971022222159B700C68B85 /* ViewController */,
+			);
+			path = living;
+			sourceTree = "<group>";
+		};
+		3F970F86222159B700C68B85 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3F970F87222159B700C68B85 /* Image */,
+				3F970FCB222159B700C68B85 /* Sound */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3F970F87222159B700C68B85 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				3F970F88222159B700C68B85 /* Registration */,
+				3F970F8A222159B700C68B85 /* LivenessDetection */,
+				3F970FC4222159B700C68B85 /* IdcardCaptor */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		3F970F88222159B700C68B85 /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				3F970F89222159B700C68B85 /* oliveapp_take_photo_button.png */,
+			);
+			path = Registration;
+			sourceTree = "<group>";
+		};
+		3F970F8A222159B700C68B85 /* LivenessDetection */ = {
+			isa = PBXGroup;
+			children = (
+				3F970F8B222159B700C68B85 /* portrait */,
+				3F970FA9222159B700C68B85 /* oliveapp_background_normal.png */,
+				3F970FAA222159B700C68B85 /* oliveapp_face_skeleton_minimum2.png */,
+				3F970FAB222159B700C68B85 /* oliveapp_background_warning.png */,
+				3F970FAC222159B700C68B85 /* landscape */,
+				3F970FC3222159B700C68B85 /* oliveapp_face_black_shadow2.png */,
+			);
+			path = LivenessDetection;
+			sourceTree = "<group>";
+		};
+		3F970F8B222159B700C68B85 /* portrait */ = {
+			isa = PBXGroup;
+			children = (
+				3F970F8C222159B700C68B85 /* oliveapp_aperture.png */,
+				3F970F8D222159B700C68B85 /* oliveapp_finishclick.png */,
+				3F970F8E222159B700C68B85 /* oliveapp_finish.png */,
+				3F970F8F222159B700C68B85 /* oliveapp_passed.png */,
+				3F970F90222159B700C68B85 /* oliveapp_retry.png */,
+				3F970F91222159B700C68B85 /* oliveapp_bg_ipad.png */,
+				3F970F92222159B700C68B85 /* oliveapp_chin_up.png */,
+				3F970F93222159B700C68B85 /* oliveapp_frame_ipad.png */,
+				3F970F94222159B700C68B85 /* oliveapp_bg.png */,
+				3F970F95222159B700C68B85 /* oliveapp_left_frame.png */,
+				3F970F96222159B700C68B85 /* oliveapp_failure.png */,
+				3F970F97222159B700C68B85 /* oliveapp_righticon.png */,
+				3F970F98222159B700C68B85 /* oliveapp_mouth_open.png */,
+				3F970F99222159B700C68B85 /* oliveapp_return.png */,
+				3F970F9A222159B700C68B85 /* oliveapp_wrongicon.png */,
+				3F970F9B222159B700C68B85 /* oliveapp_retryclick.png */,
+				3F970F9C222159B700C68B85 /* oliveapp_right_frame.png */,
+				3F970F9D222159B700C68B85 /* oliveapp_mouth_close.png */,
+				3F970F9E222159B700C68B85 /* oliveapp_chin.png */,
+				3F970F9F222159B700C68B85 /* oliveapp_detectionframeyellow.png */,
+				3F970FA0222159B700C68B85 /* oliveapp_resultpagebg.png */,
+				3F970FA1222159B700C68B85 /* oliveapp_start.png */,
+				3F970FA2222159B700C68B85 /* oliveapp_startclick.png */,
+				3F970FA3222159B700C68B85 /* oliveapp_bg2.png */,
+				3F970FA4222159B700C68B85 /* oliveapp_detectionframeblue.png */,
+				3F970FA5222159B700C68B85 /* oliveapp_homepagebg_ipad.png */,
+				3F970FA6222159B700C68B85 /* oliveapp_eye_blink.png */,
+				3F970FA7222159B700C68B85 /* oliveapp_homepagebg.png */,
+				3F970FA8222159B700C68B85 /* oliveapp_returnclick.png */,
+			);
+			path = portrait;
+			sourceTree = "<group>";
+		};
+		3F970FAC222159B700C68B85 /* landscape */ = {
+			isa = PBXGroup;
+			children = (
+				3F970FAD222159B700C68B85 /* oliveapp_left_frame_landscape.png */,
+				3F970FAE222159B700C68B85 /* oliveapp_wrongicon_landscape.png */,
+				3F970FAF222159B700C68B85 /* oliveapp_righticon_landscape.png */,
+				3F970FB0222159B700C68B85 /* oliveapp_bg_landscape.png */,
+				3F970FB1222159B700C68B85 /* oliveapp_passed_landscape.png */,
+				3F970FB2222159B700C68B85 /* oliveapp_finishclick_landscape.png */,
+				3F970FB3222159B700C68B85 /* oliveapp_homepagebg_landscape.png */,
+				3F970FB4222159B700C68B85 /* oliveapp_frame_landscape.png */,
+				3F970FB5222159B700C68B85 /* oliveapp_failure_landscape.png */,
+				3F970FB6222159B700C68B85 /* oliveapp_line_landscape.png */,
+				3F970FB7222159B700C68B85 /* oliveapp_location_landscape.png */,
+				3F970FB8222159B700C68B85 /* oliveapp_startclick_landscape.png */,
+				3F970FB9222159B700C68B85 /* oliveapp_right_frame_landscape.png */,
+				3F970FBA222159B700C68B85 /* oliveapp_retryclick_landcape.png */,
+				3F970FBB222159B700C68B85 /* oliveapp_finish_landscape.png */,
+				3F970FBC222159B700C68B85 /* oliveapp_return_landscape.png */,
+				3F970FBD222159B700C68B85 /* oliveapp_detectionframeblue_landscape.png */,
+				3F970FBE222159B700C68B85 /* oliveapp_detectionframeyellow_landscape.png */,
+				3F970FBF222159B700C68B85 /* oliveapp_resultpagebg_landscape.png */,
+				3F970FC0222159B700C68B85 /* oliveapp_returnclick_landscape.png */,
+				3F970FC1222159B700C68B85 /* oliveapp_start_landscape.png */,
+				3F970FC2222159B700C68B85 /* oliveapp_retry_landscape.png */,
+			);
+			path = landscape;
+			sourceTree = "<group>";
+		};
+		3F970FC4222159B700C68B85 /* IdcardCaptor */ = {
+			isa = PBXGroup;
+			children = (
+				3F970FC5222159B700C68B85 /* oliveapp_scan_line.png */,
+				3F970FC6222159B700C68B85 /* oliveapp_idcard_thin.png */,
+				3F970FC7222159B700C68B85 /* oliveapp_face_black_shadow.png */,
+				3F970FC8222159B700C68B85 /* oliveapp_face_idcard_shade_skeleton_minimum1.png */,
+				3F970FC9222159B700C68B85 /* oliveapp_idcard_strong.png */,
+				3F970FCA222159B700C68B85 /* oliveapp_face_idcard_shade_skeleton_minimum2.png */,
+			);
+			path = IdcardCaptor;
+			sourceTree = "<group>";
+		};
+		3F970FCB222159B700C68B85 /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				3F970FCC222159B700C68B85 /* oliveapp_step_hint_eyeclose.mp3 */,
+				3F970FCD222159B700C68B85 /* oliveapp_step_hint_headup.mp3 */,
+				3F970FCE222159B700C68B85 /* oliveapp_step_hint_prestart.mp3 */,
+				3F970FCF222159B700C68B85 /* oliveapp_step_hint_mouthopen.mp3 */,
+			);
+			path = Sound;
+			sourceTree = "<group>";
+		};
+		3F970FD0222159B700C68B85 /* DataPlist */ = {
+			isa = PBXGroup;
+			children = (
+				3F970FD1222159B700C68B85 /* LivenessDetection */,
+				3F970FD5222159B700C68B85 /* IdcardCaptor */,
+			);
+			path = DataPlist;
+			sourceTree = "<group>";
+		};
+		3F970FD1222159B700C68B85 /* LivenessDetection */ = {
+			isa = PBXGroup;
+			children = (
+				3F970FD2222159B700C68B85 /* AudioConstants.plist */,
+				3F970FD3222159B700C68B85 /* TextConstants.plist */,
+				3F970FD4222159B700C68B85 /* ActionHintConstants.plist */,
+			);
+			path = LivenessDetection;
+			sourceTree = "<group>";
+		};
+		3F970FD5222159B700C68B85 /* IdcardCaptor */ = {
+			isa = PBXGroup;
+			children = (
+				3F970FD6222159B700C68B85 /* OliveappOcrStatus.plist */,
+			);
+			path = IdcardCaptor;
+			sourceTree = "<group>";
+		};
+		3F970FDD222159B700C68B85 /* LivenessDetectionCombineSDK */ = {
+			isa = PBXGroup;
+			children = (
+				3F970FDE222159B700C68B85 /* libOliveappCombineSDK2.a */,
+				3F970FDF222159B700C68B85 /* oliveapp_combine_model_2.bundle */,
+				3F970FE0222159B700C68B85 /* Headers */,
+			);
+			path = LivenessDetectionCombineSDK;
+			sourceTree = "<group>";
+		};
+		3F970FE0222159B700C68B85 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				3F970FE1222159B700C68B85 /* OliveappPrestartValidator.h */,
+				3F970FE2222159B700C68B85 /* OliveappDetectedFrame.h */,
+				3F970FE3222159B700C68B85 /* OliveappAsyncLivenessDetectorDelegate.h */,
+				3F970FE4222159B700C68B85 /* OliveappBase64Helper.h */,
+				3F970FE5222159B700C68B85 /* OliveappSessionManagerConfig.h */,
+				3F970FE6222159B700C68B85 /* OliveappErrorHelper.h */,
+				3F970FE7222159B700C68B85 /* OliveappFaceRect.h */,
+				3F970FE8222159B700C68B85 /* OliveappAsyncIdcardCaptorDelegate.h */,
+				3F970FE9222159B700C68B85 /* OliveappTimeUtility.h */,
+				3F970FEA222159B700C68B85 /* OliveappLivenessDataType.h */,
+				3F970FEB222159B700C68B85 /* OliveappCameraImageCaptureDelegate.h */,
+				3F970FEC222159B700C68B85 /* OliveappVerificationControllerWithoutPrestart.h */,
+				3F970FED222159B700C68B85 /* OliveappUserRegistrationStatus.h */,
+				3F970FEE222159B700C68B85 /* OliveappCaptureDatabaseImageViewController.h */,
+				3F970FEF222159B700C68B85 /* OliveappExtraInfoHelper.h */,
+				3F970FF0222159B700C68B85 /* OliveappCaptureRecentPhotoViewController.h */,
+				3F970FF1222159B700C68B85 /* OliveappApplicationParameter.h */,
+				3F970FF2222159B700C68B85 /* OliveappStructLivenessFrameResult.h */,
+				3F970FF3222159B700C68B85 /* OliveappVerificationControllerFactory.h */,
+				3F970FF4222159B700C68B85 /* OliveappFaceInfo.h */,
+				3F970FF5222159B700C68B85 /* OliveappFileManager.h */,
+				3F970FF6222159B700C68B85 /* OliveappCameraPreviewController.h */,
+				3F970FF7222159B700C68B85 /* OliveappImageForVerifyConf.h */,
+				3F970FF8222159B700C68B85 /* OliveappVerificationDelegate.h */,
+				3F970FF9222159B700C68B85 /* OliveappStructOcrFrameResult.h */,
+				3F970FFA222159B700C68B85 /* OliveappAsyncPrestartValidatorDelegate.h */,
+				3F970FFB222159B700C68B85 /* OliveappViewUpdateEventDelegate.h */,
+				3F970FFC222159B700C68B85 /* OliveappVerificationController.h */,
+				3F970FFD222159B700C68B85 /* OliveappCaptureIDCardPhotoViewController.h */,
+				3F970FFE222159B700C68B85 /* OliveappPhotoImage.h */,
+				3F970FFF222159B700C68B85 /* OliveappCameraPreviewDelegate.h */,
+				3F971000222159B700C68B85 /* OliveappAsyncIdcardCaptor.h */,
+				3F971001222159B700C68B85 /* OliveappOnDatabaseImageCapturedEventListener.h */,
+				3F971002222159B700C68B85 /* LRMacroDefinitionHeader.h */,
+				3F971003222159B700C68B85 /* OliveappDeviceHelper.h */,
+				3F971004222159B700C68B85 /* OliveappIdcardVerificationController.h */,
+				3F971005222159B700C68B85 /* OliveappImageUtility.h */,
+				3F971006222159B700C68B85 /* OliveappUserRegisterImageType.h */,
+				3F971007222159B700C68B85 /* OliveappLivenessDetector.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		3F971008222159B700C68B85 /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				3F971009222159B700C68B85 /* RMIndicator */,
+				3F97100E222159B700C68B85 /* Animation */,
+				3F97101F222159B700C68B85 /* GifView */,
+			);
+			path = UIComponents;
+			sourceTree = "<group>";
+		};
+		3F971009222159B700C68B85 /* RMIndicator */ = {
+			isa = PBXGroup;
+			children = (
+				3F97100A222159B700C68B85 /* RMDownloadIndicator.h */,
+				3F97100B222159B700C68B85 /* RMDisplayLabel.m */,
+				3F97100C222159B700C68B85 /* RMDownloadIndicator.m */,
+				3F97100D222159B700C68B85 /* RMDisplayLabel.h */,
+			);
+			path = RMIndicator;
+			sourceTree = "<group>";
+		};
+		3F97100E222159B700C68B85 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				3F97100F222159B700C68B85 /* OliveappChinLayer.h */,
+				3F971010222159B700C68B85 /* OliveappButtonAnimationLayer.m */,
+				3F971011222159B700C68B85 /* OliveappMouthLayer.m */,
+				3F971012222159B700C68B85 /* OliveappBlueFrame.h */,
+				3F971013222159B700C68B85 /* OliveappEyeLayer.h */,
+				3F971014222159B700C68B85 /* OliveappHintView.h */,
+				3F971015222159B700C68B85 /* OliveappChinUpLayer.m */,
+				3F971016222159B700C68B85 /* OliveappYellowFrame.m */,
+				3F971017222159B700C68B85 /* OliveappButtonAnimationLayer.h */,
+				3F971018222159B700C68B85 /* OliveappChinLayer.m */,
+				3F971019222159B700C68B85 /* OliveappMouthLayer.h */,
+				3F97101A222159B700C68B85 /* OliveappEyeLayer.m */,
+				3F97101B222159B700C68B85 /* OliveappBlueFrame.m */,
+				3F97101C222159B700C68B85 /* OliveappChinUpLayer.h */,
+				3F97101D222159B700C68B85 /* OliveappYellowFrame.h */,
+				3F97101E222159B700C68B85 /* OliveappHintView.m */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
+		3F97101F222159B700C68B85 /* GifView */ = {
+			isa = PBXGroup;
+			children = (
+				3F971020222159B700C68B85 /* GifView.h */,
+				3F971021222159B700C68B85 /* GifView.m */,
+			);
+			path = GifView;
+			sourceTree = "<group>";
+		};
+		3F971022222159B700C68B85 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3F971023222159B700C68B85 /* LivenessDetection */,
+				3F971029222159B700C68B85 /* IdcardCaptor */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		3F971023222159B700C68B85 /* LivenessDetection */ = {
+			isa = PBXGroup;
+			children = (
+				3F971024222159B700C68B85 /* OliveappLivenessDetectionViewController.h */,
+				3F971027222159B700C68B85 /* OliveappLivenessDetectionViewController.m */,
+				3F971026222159B700C68B85 /* OliveappLivenessDetectionViewController+Animation.h */,
+				3F971028222159B700C68B85 /* OliveappLivenessDetectionViewController+Animation.m */,
+				3F971025222159B700C68B85 /* OliveappLivenessResultDelegate.h */,
+			);
+			path = LivenessDetection;
+			sourceTree = "<group>";
+		};
+		3F971029222159B700C68B85 /* IdcardCaptor */ = {
+			isa = PBXGroup;
+			children = (
+				3F97102A222159B700C68B85 /* OliveappIdcardCaptorResultDelegate.h */,
+				3F97102B222159B700C68B85 /* OliveappIdcardCaptorViewController.m */,
+				3F97102C222159B700C68B85 /* OliveappIdcardCaptorViewController.h */,
+			);
+			path = IdcardCaptor;
+			sourceTree = "<group>";
+		};
+		3F9710862221604800C68B85 /* extra */ = {
+			isa = PBXGroup;
+			children = (
+				3F971092222169E100C68B85 /* haarcascade_frontalface_alt.xml */,
+				3F97108B2221604800C68B85 /* calculateObject.h */,
+				3F97108A2221604800C68B85 /* calculateObject.mm */,
+				3F9710872221604800C68B85 /* faceView.h */,
+				3F9710892221604800C68B85 /* faceView.m */,
+				3F9710882221604800C68B85 /* UIView+ITTAdditions.h */,
+				3F97108C2221604800C68B85 /* UIView+ITTAdditions.m */,
+			);
+			path = extra;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3F970E202221591800C68B85 /* FaceDetecDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F970E502221591A00C68B85 /* Build configuration list for PBXNativeTarget "FaceDetecDemo" */;
+			buildPhases = (
+				3F970E1D2221591800C68B85 /* Sources */,
+				3F970E1E2221591800C68B85 /* Frameworks */,
+				3F970E1F2221591800C68B85 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FaceDetecDemo;
+			productName = FaceDetecDemo;
+			productReference = 3F970E212221591800C68B85 /* FaceDetecDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3F970E3B2221591A00C68B85 /* FaceDetecDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F970E532221591A00C68B85 /* Build configuration list for PBXNativeTarget "FaceDetecDemoTests" */;
+			buildPhases = (
+				3F970E382221591A00C68B85 /* Sources */,
+				3F970E392221591A00C68B85 /* Frameworks */,
+				3F970E3A2221591A00C68B85 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F970E3E2221591A00C68B85 /* PBXTargetDependency */,
+			);
+			name = FaceDetecDemoTests;
+			productName = FaceDetecDemoTests;
+			productReference = 3F970E3C2221591A00C68B85 /* FaceDetecDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3F970E462221591A00C68B85 /* FaceDetecDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F970E562221591A00C68B85 /* Build configuration list for PBXNativeTarget "FaceDetecDemoUITests" */;
+			buildPhases = (
+				3F970E432221591A00C68B85 /* Sources */,
+				3F970E442221591A00C68B85 /* Frameworks */,
+				3F970E452221591A00C68B85 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F970E492221591A00C68B85 /* PBXTargetDependency */,
+			);
+			name = FaceDetecDemoUITests;
+			productName = FaceDetecDemoUITests;
+			productReference = 3F970E472221591A00C68B85 /* FaceDetecDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3F970E192221591800C68B85 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "xiaohui mu";
+				TargetAttributes = {
+					3F970E202221591800C68B85 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					3F970E3B2221591A00C68B85 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 3F970E202221591800C68B85;
+					};
+					3F970E462221591A00C68B85 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 3F970E202221591800C68B85;
+					};
+				};
+			};
+			buildConfigurationList = 3F970E1C2221591800C68B85 /* Build configuration list for PBXProject "FaceDetecDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3F970E182221591800C68B85;
+			productRefGroup = 3F970E222221591800C68B85 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3F970E202221591800C68B85 /* FaceDetecDemo */,
+				3F970E3B2221591A00C68B85 /* FaceDetecDemoTests */,
+				3F970E462221591A00C68B85 /* FaceDetecDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3F970E1F2221591800C68B85 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F97103F222159B700C68B85 /* oliveapp_mouth_close.png in Resources */,
+				3F971034222159B700C68B85 /* oliveapp_chin_up.png in Resources */,
+				3F97103A222159B700C68B85 /* oliveapp_mouth_open.png in Resources */,
+				3F971035222159B700C68B85 /* oliveapp_frame_ipad.png in Resources */,
+				3F97103C222159B700C68B85 /* oliveapp_wrongicon.png in Resources */,
+				3F970E342221591900C68B85 /* LaunchScreen.storyboard in Resources */,
+				3F971075222159B700C68B85 /* RegistrationPage.storyboard in Resources */,
+				3F971047222159B700C68B85 /* oliveapp_homepagebg_ipad.png in Resources */,
+				3F97105E222159B700C68B85 /* oliveapp_detectionframeblue_landscape.png in Resources */,
+				3F971055222159B700C68B85 /* oliveapp_frame_landscape.png in Resources */,
+				3F971093222169E100C68B85 /* haarcascade_frontalface_alt.xml in Resources */,
+				3F97105B222159B700C68B85 /* oliveapp_retryclick_landcape.png in Resources */,
+				3F97102D222159B700C68B85 /* oliveapp_take_photo_button.png in Resources */,
+				3F971037222159B700C68B85 /* oliveapp_left_frame.png in Resources */,
+				3F970E312221591900C68B85 /* Assets.xcassets in Resources */,
+				3F97104C222159B700C68B85 /* oliveapp_face_skeleton_minimum2.png in Resources */,
+				3F971032222159B700C68B85 /* oliveapp_retry.png in Resources */,
+				3F971043222159B700C68B85 /* oliveapp_start.png in Resources */,
+				3F97102E222159B700C68B85 /* oliveapp_aperture.png in Resources */,
+				3F97103E222159B700C68B85 /* oliveapp_right_frame.png in Resources */,
+				3F971058222159B700C68B85 /* oliveapp_location_landscape.png in Resources */,
+				3F97106E222159B700C68B85 /* oliveapp_step_hint_mouthopen.mp3 in Resources */,
+				3F97106B222159B700C68B85 /* oliveapp_step_hint_eyeclose.mp3 in Resources */,
+				3F971070222159B700C68B85 /* TextConstants.plist in Resources */,
+				3F97104E222159B700C68B85 /* oliveapp_left_frame_landscape.png in Resources */,
+				3F971038222159B700C68B85 /* oliveapp_failure.png in Resources */,
+				3F97105D222159B700C68B85 /* oliveapp_return_landscape.png in Resources */,
+				3F971048222159B700C68B85 /* oliveapp_eye_blink.png in Resources */,
+				3F971056222159B700C68B85 /* oliveapp_failure_landscape.png in Resources */,
+				3F971036222159B700C68B85 /* oliveapp_bg.png in Resources */,
+				3F971063222159B700C68B85 /* oliveapp_retry_landscape.png in Resources */,
+				3F97104F222159B700C68B85 /* oliveapp_wrongicon_landscape.png in Resources */,
+				3F97104B222159B700C68B85 /* oliveapp_background_normal.png in Resources */,
+				3F971051222159B700C68B85 /* oliveapp_bg_landscape.png in Resources */,
+				3F97105F222159B700C68B85 /* oliveapp_detectionframeyellow_landscape.png in Resources */,
+				3F971054222159B700C68B85 /* oliveapp_homepagebg_landscape.png in Resources */,
+				3F971050222159B700C68B85 /* oliveapp_righticon_landscape.png in Resources */,
+				3F971052222159B700C68B85 /* oliveapp_passed_landscape.png in Resources */,
+				3F97104A222159B700C68B85 /* oliveapp_returnclick.png in Resources */,
+				3F97105A222159B700C68B85 /* oliveapp_right_frame_landscape.png in Resources */,
+				3F97106A222159B700C68B85 /* oliveapp_face_idcard_shade_skeleton_minimum2.png in Resources */,
+				3F97106F222159B700C68B85 /* AudioConstants.plist in Resources */,
+				3F971072222159B700C68B85 /* OliveappOcrStatus.plist in Resources */,
+				3F971071222159B700C68B85 /* ActionHintConstants.plist in Resources */,
+				3F971077222159B700C68B85 /* oliveapp_combine_model_2.bundle in Resources */,
+				3F97106C222159B700C68B85 /* oliveapp_step_hint_headup.mp3 in Resources */,
+				3F971065222159B700C68B85 /* oliveapp_scan_line.png in Resources */,
+				3F971046222159B700C68B85 /* oliveapp_detectionframeblue.png in Resources */,
+				3F971074222159B700C68B85 /* IdcardCaptor.storyboard in Resources */,
+				3F971061222159B700C68B85 /* oliveapp_returnclick_landscape.png in Resources */,
+				3F97106D222159B700C68B85 /* oliveapp_step_hint_prestart.mp3 in Resources */,
+				3F971064222159B700C68B85 /* oliveapp_face_black_shadow2.png in Resources */,
+				3F971040222159B700C68B85 /* oliveapp_chin.png in Resources */,
+				3F971045222159B700C68B85 /* oliveapp_bg2.png in Resources */,
+				3F971044222159B700C68B85 /* oliveapp_startclick.png in Resources */,
+				3F97103D222159B700C68B85 /* oliveapp_retryclick.png in Resources */,
+				3F971059222159B700C68B85 /* oliveapp_startclick_landscape.png in Resources */,
+				3F971060222159B700C68B85 /* oliveapp_resultpagebg_landscape.png in Resources */,
+				3F971033222159B700C68B85 /* oliveapp_bg_ipad.png in Resources */,
+				3F971069222159B700C68B85 /* oliveapp_idcard_strong.png in Resources */,
+				3F97105C222159B700C68B85 /* oliveapp_finish_landscape.png in Resources */,
+				3F971049222159B700C68B85 /* oliveapp_homepagebg.png in Resources */,
+				3F971073222159B700C68B85 /* LivenessDetection.storyboard in Resources */,
+				3F971053222159B700C68B85 /* oliveapp_finishclick_landscape.png in Resources */,
+				3F97103B222159B700C68B85 /* oliveapp_return.png in Resources */,
+				3F971041222159B700C68B85 /* oliveapp_detectionframeyellow.png in Resources */,
+				3F971031222159B700C68B85 /* oliveapp_passed.png in Resources */,
+				3F971030222159B700C68B85 /* oliveapp_finish.png in Resources */,
+				3F971067222159B700C68B85 /* oliveapp_face_black_shadow.png in Resources */,
+				3F971057222159B700C68B85 /* oliveapp_line_landscape.png in Resources */,
+				3F97102F222159B700C68B85 /* oliveapp_finishclick.png in Resources */,
+				3F971042222159B700C68B85 /* oliveapp_resultpagebg.png in Resources */,
+				3F97104D222159B700C68B85 /* oliveapp_background_warning.png in Resources */,
+				3F971062222159B700C68B85 /* oliveapp_start_landscape.png in Resources */,
+				3F971066222159B700C68B85 /* oliveapp_idcard_thin.png in Resources */,
+				3F971039222159B700C68B85 /* oliveapp_righticon.png in Resources */,
+				3F971068222159B700C68B85 /* oliveapp_face_idcard_shade_skeleton_minimum1.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F970E3A2221591A00C68B85 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F970E452221591A00C68B85 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3F970E1D2221591800C68B85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F971085222159B700C68B85 /* OliveappIdcardCaptorViewController.m in Sources */,
+				3F971079222159B700C68B85 /* RMDownloadIndicator.m in Sources */,
+				3F97107F222159B700C68B85 /* OliveappEyeLayer.m in Sources */,
+				3F97107E222159B700C68B85 /* OliveappChinLayer.m in Sources */,
+				3F97107B222159B700C68B85 /* OliveappMouthLayer.m in Sources */,
+				3F97108F2221604800C68B85 /* UIView+ITTAdditions.m in Sources */,
+				3F97107A222159B700C68B85 /* OliveappButtonAnimationLayer.m in Sources */,
+				3F971084222159B700C68B85 /* OliveappLivenessDetectionViewController+Animation.m in Sources */,
+				3F970E262221591800C68B85 /* AppDelegate.m in Sources */,
+				3F971081222159B700C68B85 /* OliveappHintView.m in Sources */,
+				3F97108D2221604800C68B85 /* faceView.m in Sources */,
+				3F971082222159B700C68B85 /* GifView.m in Sources */,
+				3F971078222159B700C68B85 /* RMDisplayLabel.m in Sources */,
+				3F97107C222159B700C68B85 /* OliveappChinUpLayer.m in Sources */,
+				3F971083222159B700C68B85 /* OliveappLivenessDetectionViewController.m in Sources */,
+				3F97108E2221604800C68B85 /* calculateObject.mm in Sources */,
+				3F97107D222159B700C68B85 /* OliveappYellowFrame.m in Sources */,
+				3F970E372221591900C68B85 /* main.m in Sources */,
+				3F971080222159B700C68B85 /* OliveappBlueFrame.m in Sources */,
+				3F972EBE222671DC00C68B85 /* DemoViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F970E382221591A00C68B85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F970E412221591A00C68B85 /* FaceDetecDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F970E432221591A00C68B85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F970E4C2221591A00C68B85 /* FaceDetecDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3F970E3E2221591A00C68B85 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F970E202221591800C68B85 /* FaceDetecDemo */;
+			targetProxy = 3F970E3D2221591A00C68B85 /* PBXContainerItemProxy */;
+		};
+		3F970E492221591A00C68B85 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F970E202221591800C68B85 /* FaceDetecDemo */;
+			targetProxy = 3F970E482221591A00C68B85 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3F970E322221591900C68B85 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F970E332221591900C68B85 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		3F970FD7222159B700C68B85 /* LivenessDetection.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F970FD8222159B700C68B85 /* Base */,
+			);
+			name = LivenessDetection.storyboard;
+			sourceTree = "<group>";
+		};
+		3F970FD9222159B700C68B85 /* IdcardCaptor.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F970FDA222159B700C68B85 /* Base */,
+			);
+			name = IdcardCaptor.storyboard;
+			sourceTree = "<group>";
+		};
+		3F970FDB222159B700C68B85 /* RegistrationPage.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F970FDC222159B700C68B85 /* Base */,
+			);
+			name = RegistrationPage.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3F970E4E2221591A00C68B85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3F970E4F2221591A00C68B85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3F970E512221591A00C68B85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 5C3XPTJ8P6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FaceDetecDemo",
+				);
+				INFOPLIST_FILE = FaceDetecDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FaceDetecDemo/living/LivenessDetectionCombineSDK",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.za.cd;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = developer;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3F970E522221591A00C68B85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 5C3XPTJ8P6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FaceDetecDemo",
+				);
+				INFOPLIST_FILE = FaceDetecDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FaceDetecDemo/living/LivenessDetectionCombineSDK",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.za.cd;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = release;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3F970E542221591A00C68B85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FaceDetecDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lymuxh.FaceDetecDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FaceDetecDemo.app/FaceDetecDemo";
+			};
+			name = Debug;
+		};
+		3F970E552221591A00C68B85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FaceDetecDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lymuxh.FaceDetecDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FaceDetecDemo.app/FaceDetecDemo";
+			};
+			name = Release;
+		};
+		3F970E572221591A00C68B85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FaceDetecDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lymuxh.FaceDetecDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FaceDetecDemo;
+			};
+			name = Debug;
+		};
+		3F970E582221591A00C68B85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FaceDetecDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lymuxh.FaceDetecDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FaceDetecDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3F970E1C2221591800C68B85 /* Build configuration list for PBXProject "FaceDetecDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F970E4E2221591A00C68B85 /* Debug */,
+				3F970E4F2221591A00C68B85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F970E502221591A00C68B85 /* Build configuration list for PBXNativeTarget "FaceDetecDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F970E512221591A00C68B85 /* Debug */,
+				3F970E522221591A00C68B85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F970E532221591A00C68B85 /* Build configuration list for PBXNativeTarget "FaceDetecDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F970E542221591A00C68B85 /* Debug */,
+				3F970E552221591A00C68B85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F970E562221591A00C68B85 /* Build configuration list for PBXNativeTarget "FaceDetecDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F970E572221591A00C68B85 /* Debug */,
+				3F970E582221591A00C68B85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3F970E192221591800C68B85 /* Project object */;
+}

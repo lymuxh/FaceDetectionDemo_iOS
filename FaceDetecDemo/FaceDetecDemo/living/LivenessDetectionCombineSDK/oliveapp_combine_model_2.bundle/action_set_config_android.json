@@ -1,0 +1,297 @@
+{
+    "common_path": "/mnt/eng-nfs/regression_test_data/face_client/model_release/liveness_sdk_model/face_model/",
+    "object_key_set" :
+    [
+        "mouth_open_verifier",
+        "eye_close_verifier",
+        "face_preprocessor_4_action_verifier",
+        "color_histogram_based_face_continuity",
+        "face_rect_based_face_continuity",
+        "face_pose_based_face_continuity",
+        "dark_illumination_classification"
+    ],
+
+    "num_frames_wait_to_start": 6,
+    "max_num_consistent_frames_without_face": 3,
+    "max_num_non_face_continuity_frame": 3,
+    "non_face_continuity_threshold" : 0.03,
+    "non_face_continuity_3_frames_threshold" : 0.05,
+    "is_fix_eye_align": true,
+    "buffer_size": 200,
+
+    "frontal_view_det_thre" : 1.5,
+    "frontal_view_det_of_cont_face" : -2,
+    "overlap_ratio_threshold_of_continuity_face": 0.8,
+
+    "enable_color_hist_based_continuity": true,
+    "enable_face_rect_based_continuity": true,
+    "enable_face_pose_based_continuity": false,
+    "enable_no_face_continuity": false,
+
+    "max_allowed_face_size": 240,
+    "min_allowed_face_size": 120,
+    "max_allowed_face_position_x": 280,
+    "min_allowed_face_position_x": 220,
+    "max_allowed_face_position_y": 250,
+    "min_allowed_face_position_y": 85,
+    "max_allowed_x_pose": 25,
+    "max_allowed_y_pose": 15,
+
+    "eye_close_verifier" : {
+        "type" : "eye_close_verifier",
+        "config" : {
+            "angle_x_limit": [-8, 8, 10, 20],
+            "angle_y_limit": [-15, 15, -15, 15],
+            "detect_alignment_overlap_thres": 0.5,
+            "minimum_angle_movement": 6,
+            "minimum_increase_times": 2,
+            "is_estimate_detected_rect": true,
+            "n_frame_to_get_stable_detection_size": 3,
+            "est_size_ratio_limit": 0.78,
+            "est_angle_x_limit": 10,
+            "est_angle_y_limit": 25,
+            "est_angle_z_limit": 10,
+            "sample_frame_every_n": 1,
+            "is_restrict_detection_overlap_ratio": false,
+            "detection_overlap_ratio": 0.5,
+            "minimum_movement_ratio": 0.08,
+            "num_frames_wait_to_pass": 3,
+            "num_frames_wait_to_start": 3,
+
+            "is_check_rot_down" : true,
+            "angle_x_threshold" : 30,
+            "angle_y_threshold" : 15,
+            "min_detect_rect_overlap" : 0.5,
+            "object_key_set": [ "eye_close_expression", "eye_open_expression"],
+            "eye_close_expression" : {
+                "type" : "eye_close_expression",
+                "config": {
+                    "threshold" : -0.5,
+                    "convert_result" : false,
+                    "left_or_right_eye" : "both",
+                    "attribute_name" : "eye_close"
+                }
+            },
+            "eye_open_expression" : {
+                "type" : "eye_open_expression",
+                "config" : {
+                    "threshold" : 0.3,
+                    "convert_result": false,
+                    "left_or_right_eye" : "both",
+                    "attribute_name": "eye_open"
+                }
+            }
+        }
+    },
+    
+    "mouth_open_verifier" : {
+        "type": "mouth_open_verifier",
+        "config": {
+            "angle_x_threshold" : 20,
+            "angle_y_threshold" : 20,
+            "min_mouth_close_frame" : 1,
+            "min_mouth_open_frame" : 1,
+            "min_detect_rect_overlap" : 0.5,
+            "num_frames_wait_to_start": 3,
+
+            "object_key_set": [ "mouth_close_expression", "mouth_open_expression" ],
+            "mouth_close_expression" : {
+                "type": "mouth_close_expression",
+                "config": {
+                    "threshold": 0.3,
+                    "attribute_name": " mouth_close",
+                    "open_or_close": "close",
+                    "udd_threshold": 0.13,
+
+                    "output_stage_debug_image": false,
+                    "output_random_forest_debug_image": false,
+                    "output_random_forest_shift": false
+                }
+            },
+            "mouth_open_expression": {
+                "type": "mouth_open_expression",
+                "config": {
+                    "threshold": 0.623181,
+                    "attribute_name": " mouth_open",
+                    "open_or_close": "open",
+                    "udd_threshold": 0.07,
+
+                    "output_stage_debug_image": false,
+                    "output_random_forest_debug_image": false,
+                    "output_random_forest_shift": false
+                }
+            }
+        }
+    },
+
+
+    "color_histogram_based_face_continuity":
+    {
+        "type" : "color_histogram_based_face_continuity",
+        "config" : {
+            "enable_check_face_pose": false,
+            "threshold_for_discontinuity" : 0.1,
+            "threshold_for_continuity" : 0.01,
+            "block_split_num" : 2,
+            "color_bin_size" : 32,
+            "rect_shift_ratio_for_y_rot" : 0.15,
+            "resized_width" : 35,
+            "resized_height" : 35,
+
+            "inner_landmark_ids" : [7, 9, 10, 11],
+            "left_landmark_ids" :  [9, 11],
+            "right_landmark_ids" : [7, 10],
+
+            "rect_size" : 0.3,
+
+            "frontal_view_landmark_ids" : [ 1, 3, 4, 6, 7, 9, 10, 11, 26, 27, 91, 93, 29, 96, 98, 70],
+            "side_view_landmark_ids" : [1, 3, 4, 6, 7, 9, 10, 11],
+
+            "frontal_view_mean_shape" :
+            {
+              "chin" : {
+                 "score" : 1.0,
+                 "x" : 0.5036943879036465,
+                 "y" : 1.008894067862306
+              },
+              "down_out_profile_01" : {
+                 "score" : 1.0,
+                 "x" : 0.1138044594605391,
+                 "y" : 0.6329157033824905
+              },
+              "down_out_profile_03" : {
+                 "score" : 1.0,
+                 "x" : 0.2576859798710668,
+                 "y" : 0.8865099503596099
+              },
+              "down_out_profile_06" : {
+                 "score" : 1.0,
+                 "x" : 0.7513928487947279,
+                 "y" : 0.8856440852869628
+              },
+              "down_out_profile_08" : {
+                 "score" : 1.0,
+                 "x" : 0.8937542014360337,
+                 "y" : 0.6281807991511253
+              },
+              "faceType" : "",
+              "face_rect" : {
+                 "h" : 0,
+                 "w" : 0,
+                 "x" : 0,
+                 "y" : 0
+              },
+              "left_eye_left" : {
+                 "score" : 1.0,
+                 "x" : 0.2437316208011216,
+                 "y" : 0.3332181724987313
+              },
+              "left_eye_right" : {
+                 "score" : 1.0,
+                 "x" : 0.3731200421116071,
+                 "y" : 0.3371589343507663
+              },
+              "mouth_bottom_lip_up" : {
+                 "score" : 1.0,
+                 "x" : 0.5023221277196060,
+                 "y" : 0.7713881898899084
+              },
+              "mouth_left" : {
+                 "score" : 1.0,
+                 "x" : 0.3493006180738530,
+                 "y" : 0.7371467205069459
+              },
+              "mouth_right" : {
+                 "score" : 1.0,
+                 "x" : 0.6568716735160492,
+                 "y" : 0.7340116501923828
+              },
+              "mouth_top_lip_down" : {
+                 "score" : 1.0,
+                 "x" : 0.5024785414490828,
+                 "y" : 0.7302064763406162
+              },
+              "nose_left" : {
+                 "score" : 1.0,
+                 "x" : 0.4051306404175251,
+                 "y" : 0.5975425066307040
+              },
+              "nose_right" : {
+                 "score" : 1.0,
+                 "x" : 0.5970228778788071,
+                 "y" : 0.5963410568720880
+              },
+              "right_eye_left" : {
+                 "score" : 1.0,
+                 "x" : 0.6265164658874077,
+                 "y" : 0.3352360858636038
+              },
+              "right_eye_right" : {
+                 "score" : 1.0,
+                 "x" : 0.7574280780469842,
+                 "y" : 0.3301487861034327
+              },
+              "up_out_profile_06" : {
+                 "score" : 1.0,
+                 "x" : 0.4990723857920574,
+                 "y" : -0.1283283651556442
+              }
+            }
+        }
+    },
+
+    "face_rect_based_face_continuity" : 
+    {
+        "type" : "face_rect_based_face_continuity" ,
+        "config" : {
+            "min_overlap_ratio_threshold" : 0.3,
+            "min_area_ratio_threshold" : 0.5,
+            
+            "min_face_pos_x" : 100, 
+            "max_face_pos_x" : 400, 
+            "min_face_pos_y" : 0, 
+            "max_face_pos_y" : 400 ,
+
+	        "landmark_ids_bound": [ 1, 3, 4, 6, 7, 9, 10, 11, 26, 27, 91, 93, 29, 96, 98]
+        }
+    },
+
+    "face_pose_based_face_continuity" : 
+    {
+        "type" : "face_pose_based_face_continuity" ,
+        "config" : {
+            "x_max_delta_frontal" : 20,
+            "y_max_delta_frontal" : 25,
+            "z_max_delta_frontal" : 15,
+            "y_min_for_side" : 6
+        }
+    },
+
+    "face_preprocessor_4_action_verifier": {
+        "type": "face_preprocessor_4_action_verifier",
+        "config": {
+            "face_detector_with_alignment" : {
+                "type" : "face_detector_with_alignment",
+                "config" : {
+                    "config_path" : "./m/detalign_android_F.json"
+                }
+            },
+            "face_normalizer" : {
+                "type" : "face_normalizer",
+                "config" : {
+                    "config_path" : "./m/pose_estiomation_su_ave_16.json"
+                }
+            },
+            "object_key_set" : ["face_detector_with_alignment", "face_normalizer"]
+        }
+    },
+
+    "dark_illumination_classification": {
+        "type" : "dark_illumination_classification" ,
+        "config" : {
+            "threshold_dark" : 0.3,
+            "scale_dark" : 0.6,
+            "radius_uneven" : 0.8
+        }
+    }
+}

@@ -1,0 +1,60 @@
+{
+    "common_path": "../../../../models/face_model/",
+    "id_num_threshold" : 3,
+    "image_test" : false,
+    "debug_mode" : false,
+    "start_time" : 0,
+    "reflect_neimeng_id_num_location" : 7,
+    "reflect_id_num_location" : 9,
+    "reflect_x_ratio" : 0.7,
+    "reflect_y_ratio" : 0.88,
+    "idcard_width": 684,
+   	"idcard_height" : 432,
+ 
+    "fuzzy_config" : "i_c_o_for_client/fuzzy/fuzzy_config.json",
+    "idcard_recognizer_config": "./idcard_rec_D017A.conf",
+    "idcard_type":2,
+
+    "still_distance" : 70,
+    "still_threshold" : -1,
+
+    "id_num_dis_thres" : [200, 350],
+    "detect_rect" : {"x" : 417, "y" : 87, "w" : 162, "h" : 214},
+    "id_neimeng_num_first_rect" : {"x" : 233, "y" : 290, "w" : 140, "h" : 110},
+    "id_neimeng_num_last_rect" : {"x" : 489, "y" : 290, "w" : 160, "h" : 110},
+    "id_num_first_rect" : {"x" : 233, "y" : 290, "w" : 80, "h" : 110},
+    "id_num_last_rect" : {"x" : 489, "y" : 290, "w" : 100, "h" : 110},
+
+    "reflect_rect" : {"x" : 91, "y" : 64, "w" : 497, "h" : 312},
+    "reflect_threshold1" : 250,
+    "reflect_point_num1" : 50,
+    "reflect_threshold2" : 220,
+    "reflect_point_num2" : 85,
+    "reflect_rect_size" : 200,
+    "reflect_gray_min_diff" : 30,
+
+      "object_key_set" : ["idcard_ocr_face_detector_with_alignment", "idcard_ocr_normalize"],
+      "idcard_ocr_face_detector_with_alignment":{
+        "type" : "face_detector_with_alignment",
+        "config": {
+        "config_path" : "./m/detalign_android_idcard_ocr.json"
+        }
+      },
+      "idcard_ocr_normalize" :{
+        "type" : "idcard_ocr_normalize",
+        "config": {
+          "not_use_name_normalizer" : true,
+            "width" : 32,
+            "height" : 48,
+            "hogBinSize" : 3,
+            "detectX" : -7.2,
+            "detectY" : 2.2,
+            "detectW" : 12,
+            "detectH" : 3.7,
+            "enlarge" : 2,
+            "fillSize" : 30,
+            "windowsRatio" : 12,
+            "idDigitals" : 18
+          }
+      }
+}

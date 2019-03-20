@@ -1,0 +1,17 @@
+{
+    "common_path": "../../../../models/face_model/",
+    "model_key_set" : ["idcard_ocr_face_detector_with_alignment", "idcard_ocr_normalize"],
+      "idcard_ocr_face_detector_with_alignment" : {
+          "type" : "face_detector_with_alignment",
+          "config" : {
+              "config_path" : "./m/detalign_android_idcard_ocr.json"
+          }
+      },
+      "idcard_ocr_normalize" : {
+          "type" : "idcard_ocr_normalize",
+          "config" : {
+            "not_use_1v1_classifier" : true,
+            "modelPath" : "./i_c_o_for_client/number_1vall.compress"
+        }
+    }
+}

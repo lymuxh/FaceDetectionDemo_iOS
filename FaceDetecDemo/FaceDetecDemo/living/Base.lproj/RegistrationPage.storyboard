@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment version="2304" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--类证件照 ViewController-->
+        <scene sceneID="hZZ-aK-Avg">
+            <objects>
+                <viewController storyboardIdentifier="RecentPhotoStoryboard" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Z18-cz-Cf0" userLabel="类证件照 ViewController" customClass="OliveappCaptureRecentPhotoViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Qso-oE-WFS"/>
+                        <viewControllerLayoutGuide type="bottom" id="BYO-8Q-2FI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="b4V-ou-TwJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3tQ-hl-pnS" userLabel="CameraPreview">
+                                <rect key="frame" x="-20" y="0.0" width="415" height="667"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="oliveapp_face_skeleton_minimum2.png" translatesAutoresizingMaskIntoConstraints="NO" id="5LC-Kh-5Fp" userLabel="CameraAperture">
+                                <rect key="frame" x="57" y="129" width="262" height="349"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="5LC-Kh-5Fp" secondAttribute="height" multiplier="3:4" id="UEN-bJ-sW5"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="oliveapp_face_black_shadow.png" translatesAutoresizingMaskIntoConstraints="NO" id="dIy-So-nFD" userLabel="ShadowTop">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="129"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="24" id="5hT-ZM-aKY"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="oliveapp_face_black_shadow.png" translatesAutoresizingMaskIntoConstraints="NO" id="y9W-w7-BFP" userLabel="ShadowBottom">
+                                <rect key="frame" x="0.0" y="478" width="375" height="209"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="oliveapp_face_black_shadow.png" translatesAutoresizingMaskIntoConstraints="NO" id="lA3-Ru-HiO" userLabel="ShadowLeft">
+                                <rect key="frame" x="0.0" y="129" width="57" height="349"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="oliveapp_face_black_shadow.png" translatesAutoresizingMaskIntoConstraints="NO" id="lMX-2Q-FI6" userLabel="ShadowRight">
+                                <rect key="frame" x="319" y="129" width="56" height="349"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="asU-OY-n2D">
+                                <rect key="frame" x="106" y="571" width="164" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="RVl-0q-ATV"/>
+                                </constraints>
+                                <string key="text">请正对取景框拍照
+
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lnv-QR-jeQ">
+                                <rect key="frame" x="20" y="616" width="37" height="34"/>
+                                <state key="normal" title="取消">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="onCancelCapture:" destination="Z18-cz-Cf0" eventType="touchUpInside" id="bPE-oJ-nSi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IWb-gC-mbg" userLabel="拍照按钮">
+                                <rect key="frame" x="158" y="603" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="IWb-gC-mbg" secondAttribute="height" id="chX-zv-iKK"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="60" id="i6d-OH-vFO"/>
+                                </constraints>
+                                <state key="normal" image="oliveapp_take_photo_button.png">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="takePhotoButtonPressed:" destination="Z18-cz-Cf0" eventType="touchUpInside" id="RLE-mh-byh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="lA3-Ru-HiO" firstAttribute="top" secondItem="5LC-Kh-5Fp" secondAttribute="top" id="42h-me-wUb"/>
+                            <constraint firstItem="3tQ-hl-pnS" firstAttribute="top" secondItem="b4V-ou-TwJ" secondAttribute="top" id="6U8-dM-N7B"/>
+                            <constraint firstItem="5LC-Kh-5Fp" firstAttribute="width" secondItem="b4V-ou-TwJ" secondAttribute="width" multiplier="0.7" id="7IH-zs-E0L"/>
+                            <constraint firstAttribute="trailing" secondItem="lMX-2Q-FI6" secondAttribute="trailing" id="9l6-Xo-OIT"/>
+                            <constraint firstItem="lA3-Ru-HiO" firstAttribute="leading" secondItem="b4V-ou-TwJ" secondAttribute="leading" id="Aio-H1-An4"/>
+                            <constraint firstItem="5LC-Kh-5Fp" firstAttribute="top" secondItem="lMX-2Q-FI6" secondAttribute="top" id="BkD-Df-ZRX"/>
+                            <constraint firstItem="asU-OY-n2D" firstAttribute="top" relation="greaterThanOrEqual" secondItem="5LC-Kh-5Fp" secondAttribute="bottom" priority="250" constant="30" id="CQh-Qe-PNs"/>
+                            <constraint firstAttribute="centerY" secondItem="5LC-Kh-5Fp" secondAttribute="centerY" priority="750" constant="30" id="GRm-U2-8r1"/>
+                            <constraint firstAttribute="centerX" secondItem="IWb-gC-mbg" secondAttribute="centerX" id="I6t-SB-se6"/>
+                            <constraint firstItem="5LC-Kh-5Fp" firstAttribute="bottom" secondItem="lMX-2Q-FI6" secondAttribute="bottom" id="KBo-aM-aLZ"/>
+                            <constraint firstAttribute="trailing" secondItem="y9W-w7-BFP" secondAttribute="trailing" id="KU5-aX-6YZ"/>
+                            <constraint firstItem="5LC-Kh-5Fp" firstAttribute="trailing" secondItem="lMX-2Q-FI6" secondAttribute="leading" id="Las-QW-aTF"/>
+                            <constraint firstAttribute="bottom" secondItem="3tQ-hl-pnS" secondAttribute="bottom" id="Nff-wG-2bp"/>
+                            <constraint firstItem="asU-OY-n2D" firstAttribute="top" relation="greaterThanOrEqual" secondItem="5LC-Kh-5Fp" secondAttribute="bottom" constant="8" id="PG8-k5-V8w"/>
+                            <constraint firstItem="lnv-QR-jeQ" firstAttribute="leading" secondItem="b4V-ou-TwJ" secondAttribute="leading" constant="20" id="ScE-F9-X6V"/>
+                            <constraint firstItem="BYO-8Q-2FI" firstAttribute="top" secondItem="IWb-gC-mbg" secondAttribute="bottom" constant="4" id="T0X-JW-8ec"/>
+                            <constraint firstItem="3tQ-hl-pnS" firstAttribute="leading" secondItem="b4V-ou-TwJ" secondAttribute="leading" constant="-20" id="Y3c-GG-uCt"/>
+                            <constraint firstItem="IWb-gC-mbg" firstAttribute="top" secondItem="asU-OY-n2D" secondAttribute="bottom" constant="8" id="ZBn-eH-ctM"/>
+                            <constraint firstItem="dIy-So-nFD" firstAttribute="bottom" secondItem="5LC-Kh-5Fp" secondAttribute="top" id="aIN-ef-uqm"/>
+                            <constraint firstItem="y9W-w7-BFP" firstAttribute="top" secondItem="5LC-Kh-5Fp" secondAttribute="bottom" id="eZk-9h-YXz"/>
+                            <constraint firstItem="y9W-w7-BFP" firstAttribute="leading" secondItem="b4V-ou-TwJ" secondAttribute="leading" id="ejU-Kf-EFH"/>
+                            <constraint firstAttribute="centerX" secondItem="5LC-Kh-5Fp" secondAttribute="centerX" id="iuU-Pz-hJd"/>
+                            <constraint firstItem="lnv-QR-jeQ" firstAttribute="centerY" secondItem="IWb-gC-mbg" secondAttribute="centerY" id="j9q-PZ-d1s"/>
+                            <constraint firstItem="lA3-Ru-HiO" firstAttribute="trailing" secondItem="5LC-Kh-5Fp" secondAttribute="leading" id="jfl-Nk-f1P"/>
+                            <constraint firstItem="lA3-Ru-HiO" firstAttribute="bottom" secondItem="5LC-Kh-5Fp" secondAttribute="bottom" id="qOS-DG-XGs"/>
+                            <constraint firstAttribute="trailing" secondItem="dIy-So-nFD" secondAttribute="trailing" id="qpz-lG-RTn"/>
+                            <constraint firstAttribute="trailing" secondItem="3tQ-hl-pnS" secondAttribute="trailing" constant="-20" id="trf-nF-ZNN"/>
+                            <constraint firstItem="BYO-8Q-2FI" firstAttribute="bottom" secondItem="y9W-w7-BFP" secondAttribute="bottom" constant="-20" id="uLx-qb-t44"/>
+                            <constraint firstAttribute="centerX" secondItem="asU-OY-n2D" secondAttribute="centerX" id="ucX-EI-enh"/>
+                            <constraint firstItem="dIy-So-nFD" firstAttribute="leading" secondItem="b4V-ou-TwJ" secondAttribute="leading" id="weJ-MI-jTi"/>
+                            <constraint firstItem="dIy-So-nFD" firstAttribute="top" secondItem="Qso-oE-WFS" secondAttribute="top" constant="-20" id="yZ5-KN-zR1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cameraPreviewSuperView" destination="b4V-ou-TwJ" id="WU3-be-sVV"/>
+                        <outlet property="cameraPreviewSuperViewForiPhone4" destination="3tQ-hl-pnS" id="0ar-L5-Rbv"/>
+                        <outlet property="idcardApertureView" destination="5LC-Kh-5Fp" id="Fq9-f9-jAu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Yd-C3-dMx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-279" y="497"/>
+        </scene>
+        <!--翻拍证件照 ViewController-->
+        <scene sceneID="aoV-ue-6Ou">
+            <objects>
+                <viewController storyboardIdentifier="CaptureIDCardStoryboard" useStoryboardIdentifierAsRestorationIdentifier="YES" id="cJn-Pt-fS2" userLabel="翻拍证件照 ViewController" customClass="OliveappCaptureIDCardPhotoViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1Db-gV-AOr"/>
+                        <viewControllerLayoutGuide type="bottom" id="thy-gb-K51"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Obr-5s-jVV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Rf-62-jqx" userLabel="CameraPreview">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="1Rf-62-jqx" secondAttribute="height" multiplier="2:3" priority="250" id="qEs-Df-b9I"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="oliveapp_face_idcard_shade_skeleton_minimum2.png" translatesAutoresizingMaskIntoConstraints="NO" id="9V5-4C-jlS" userLabel="CameraAperture">
+                                <rect key="frame" x="38" y="65" width="300" height="478"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="9V5-4C-jlS" secondAttribute="height" multiplier="188/300" id="Jca-Ir-2pO"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="oliveapp_face_black_shadow.png" translatesAutoresizingMaskIntoConstraints="NO" id="3Yz-ml-9D2" userLabel="ShadowTop">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="32" id="W6g-Cl-gPe"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="oliveapp_face_black_shadow.png" translatesAutoresizingMaskIntoConstraints="NO" id="CcW-bx-2xs" userLabel="ShadowBottom">
+                                <rect key="frame" x="0.0" y="543" width="375" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="16" id="5ax-b9-EyS"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="oliveapp_face_black_shadow.png" translatesAutoresizingMaskIntoConstraints="NO" id="xWg-Aa-g5C" userLabel="ShadowLeft">
+                                <rect key="frame" x="0.0" y="65" width="38" height="478"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="oliveapp_face_black_shadow.png" translatesAutoresizingMaskIntoConstraints="NO" id="qqq-XG-ea2" userLabel="ShadowRight">
+                                <rect key="frame" x="338" y="65" width="37" height="478"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f2Q-RX-B8d" userLabel="按钮面板">
+                                <rect key="frame" x="0.0" y="559" width="375" height="108"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0jU-Zp-3eC" userLabel="拍照按钮">
+                                        <rect key="frame" x="163" y="29" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="50" id="Lxu-ts-51w"/>
+                                            <constraint firstAttribute="width" secondItem="0jU-Zp-3eC" secondAttribute="height" multiplier="1:1" id="feh-FF-ffm"/>
+                                        </constraints>
+                                        <state key="normal" image="oliveapp_take_photo_button.png">
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="takePhotoButtonPressed:" destination="cJn-Pt-fS2" eventType="touchUpInside" id="ukW-n0-Z6l"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Czn-qd-kiH">
+                                        <rect key="frame" x="20" y="37" width="37" height="34"/>
+                                        <state key="normal" title="取消">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onCancelCapture:" destination="cJn-Pt-fS2" eventType="touchUpInside" id="M23-JN-pbF"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="0jU-Zp-3eC" firstAttribute="centerX" secondItem="f2Q-RX-B8d" secondAttribute="centerX" id="CLn-FL-Xtw"/>
+                                    <constraint firstItem="0jU-Zp-3eC" firstAttribute="top" relation="greaterThanOrEqual" secondItem="f2Q-RX-B8d" secondAttribute="top" constant="16" id="Ezy-ls-9nT"/>
+                                    <constraint firstItem="Czn-qd-kiH" firstAttribute="leading" secondItem="f2Q-RX-B8d" secondAttribute="leading" constant="20" id="Ono-vB-X0D"/>
+                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="0jU-Zp-3eC" secondAttribute="bottom" constant="16" id="cAg-JN-WHb"/>
+                                    <constraint firstItem="Czn-qd-kiH" firstAttribute="centerY" secondItem="0jU-Zp-3eC" secondAttribute="centerY" id="qcj-vF-pXC"/>
+                                    <constraint firstItem="0jU-Zp-3eC" firstAttribute="centerY" secondItem="f2Q-RX-B8d" secondAttribute="centerY" id="teT-JL-Okc"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请拍摄身份证正面，保持文字清晰" textAlignment="center" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cMb-By-Xyq">
+                                <rect key="frame" x="-131" y="293" width="300" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="4Qn-hh-rvz"/>
+                                    <constraint firstAttribute="height" constant="21" id="KHh-Uj-bDP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="oliveapp_face_idcard_shade_skeleton_minimum1.png" translatesAutoresizingMaskIntoConstraints="NO" id="NiR-FZ-Zly" userLabel="CameraAperture">
+                                <rect key="frame" x="38" y="65" width="300" height="478"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="f2Q-RX-B8d" secondAttribute="trailing" id="2Gs-5S-CJn"/>
+                            <constraint firstAttribute="trailing" secondItem="CcW-bx-2xs" secondAttribute="trailing" id="2sH-dA-ZRG"/>
+                            <constraint firstItem="1Rf-62-jqx" firstAttribute="top" secondItem="Obr-5s-jVV" secondAttribute="top" id="5ob-PR-8Qu"/>
+                            <constraint firstItem="9V5-4C-jlS" firstAttribute="bottom" secondItem="qqq-XG-ea2" secondAttribute="bottom" id="7uM-6F-h2V"/>
+                            <constraint firstAttribute="bottom" secondItem="1Rf-62-jqx" secondAttribute="bottom" id="9Oh-Qj-162"/>
+                            <constraint firstItem="3Yz-ml-9D2" firstAttribute="leading" secondItem="Obr-5s-jVV" secondAttribute="leading" id="9fu-Hd-ZeR"/>
+                            <constraint firstItem="3Yz-ml-9D2" firstAttribute="top" secondItem="1Db-gV-AOr" secondAttribute="top" constant="-20" id="Bfz-7n-3cD"/>
+                            <constraint firstAttribute="trailing" secondItem="qqq-XG-ea2" secondAttribute="trailing" id="CcE-kC-kOJ"/>
+                            <constraint firstItem="xWg-Aa-g5C" firstAttribute="trailing" secondItem="9V5-4C-jlS" secondAttribute="leading" id="GRF-j7-Chq"/>
+                            <constraint firstItem="xWg-Aa-g5C" firstAttribute="leading" secondItem="Obr-5s-jVV" secondAttribute="leading" id="GVP-I4-hQ2"/>
+                            <constraint firstItem="xWg-Aa-g5C" firstAttribute="top" secondItem="9V5-4C-jlS" secondAttribute="top" id="MDw-IK-h9W"/>
+                            <constraint firstItem="cMb-By-Xyq" firstAttribute="centerY" secondItem="xWg-Aa-g5C" secondAttribute="centerY" id="Qyk-Xa-ZH8"/>
+                            <constraint firstItem="CcW-bx-2xs" firstAttribute="top" secondItem="9V5-4C-jlS" secondAttribute="bottom" id="R2X-mX-Afk"/>
+                            <constraint firstAttribute="centerY" secondItem="9V5-4C-jlS" secondAttribute="centerY" priority="750" constant="30" id="Rf2-bk-cDP"/>
+                            <constraint firstItem="cMb-By-Xyq" firstAttribute="centerX" secondItem="xWg-Aa-g5C" secondAttribute="centerX" id="Tt3-rt-RTy"/>
+                            <constraint firstItem="9V5-4C-jlS" firstAttribute="top" relation="greaterThanOrEqual" secondItem="1Db-gV-AOr" secondAttribute="bottom" constant="16" id="Wb0-98-G3a"/>
+                            <constraint firstItem="9V5-4C-jlS" firstAttribute="width" secondItem="Obr-5s-jVV" secondAttribute="width" multiplier="0.8" priority="750" id="YfP-th-bva"/>
+                            <constraint firstItem="CcW-bx-2xs" firstAttribute="leading" secondItem="Obr-5s-jVV" secondAttribute="leading" id="ZAb-5U-82c"/>
+                            <constraint firstItem="NiR-FZ-Zly" firstAttribute="leading" secondItem="9V5-4C-jlS" secondAttribute="leading" id="a1s-Nd-6NX"/>
+                            <constraint firstItem="f2Q-RX-B8d" firstAttribute="top" secondItem="CcW-bx-2xs" secondAttribute="bottom" id="b50-MG-ckq"/>
+                            <constraint firstItem="f2Q-RX-B8d" firstAttribute="leading" secondItem="Obr-5s-jVV" secondAttribute="leading" id="cPD-mM-PQ8"/>
+                            <constraint firstItem="thy-gb-K51" firstAttribute="top" secondItem="f2Q-RX-B8d" secondAttribute="bottom" id="cZB-5y-8fi"/>
+                            <constraint firstAttribute="trailing" secondItem="1Rf-62-jqx" secondAttribute="trailing" id="djo-jP-zV4"/>
+                            <constraint firstItem="xWg-Aa-g5C" firstAttribute="bottom" secondItem="9V5-4C-jlS" secondAttribute="bottom" id="fX8-tt-eJw"/>
+                            <constraint firstAttribute="trailing" secondItem="3Yz-ml-9D2" secondAttribute="trailing" id="i8b-KQ-faj"/>
+                            <constraint firstItem="1Rf-62-jqx" firstAttribute="centerX" secondItem="Obr-5s-jVV" secondAttribute="centerX" id="kDJ-rw-fIx"/>
+                            <constraint firstItem="9V5-4C-jlS" firstAttribute="trailing" secondItem="qqq-XG-ea2" secondAttribute="leading" id="n8W-Qq-cyC"/>
+                            <constraint firstItem="3Yz-ml-9D2" firstAttribute="bottom" secondItem="9V5-4C-jlS" secondAttribute="top" id="pof-9G-dOh"/>
+                            <constraint firstItem="1Rf-62-jqx" firstAttribute="leading" secondItem="Obr-5s-jVV" secondAttribute="leading" id="q1W-Gd-aJO"/>
+                            <constraint firstAttribute="centerX" secondItem="9V5-4C-jlS" secondAttribute="centerX" id="qhP-vu-9HE"/>
+                            <constraint firstItem="NiR-FZ-Zly" firstAttribute="top" secondItem="9V5-4C-jlS" secondAttribute="top" id="tE2-lS-iuT"/>
+                            <constraint firstItem="NiR-FZ-Zly" firstAttribute="bottom" secondItem="9V5-4C-jlS" secondAttribute="bottom" id="xck-co-2PD"/>
+                            <constraint firstItem="NiR-FZ-Zly" firstAttribute="trailing" secondItem="9V5-4C-jlS" secondAttribute="trailing" id="yQI-Ce-4Qf"/>
+                            <constraint firstItem="9V5-4C-jlS" firstAttribute="top" secondItem="qqq-XG-ea2" secondAttribute="top" id="ybS-Wi-Ezr"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cameraPreviewSuperView" destination="Obr-5s-jVV" id="HLs-qf-mQ1"/>
+                        <outlet property="cameraPreviewSuperViewForiPhone4" destination="1Rf-62-jqx" id="Yw4-aN-kOS"/>
+                        <outlet property="hintLabel" destination="cMb-By-Xyq" id="dhs-ad-anG"/>
+                        <outlet property="hintShadowImageBack" destination="NiR-FZ-Zly" id="6gY-VE-OBU"/>
+                        <outlet property="hintShadowImageFront" destination="9V5-4C-jlS" id="J26-Ci-pu0"/>
+                        <outlet property="idcardApertureView" destination="9V5-4C-jlS" id="qLk-WA-oOl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mbt-tP-Eo2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="210" y="497"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="oliveapp_face_black_shadow.png" width="10" height="10"/>
+        <image name="oliveapp_face_idcard_shade_skeleton_minimum1.png" width="188" height="298"/>
+        <image name="oliveapp_face_idcard_shade_skeleton_minimum2.png" width="188" height="300"/>
+        <image name="oliveapp_face_skeleton_minimum2.png" width="441" height="441"/>
+        <image name="oliveapp_take_photo_button.png" width="160" height="160"/>
+    </resources>
+</document>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>hinttext_action_0</key>
+	<string>请正对屏幕</string>
+	<key>hinttext_action_60</key>
+	<string>请左右摇头
+随后正对屏幕</string>
+	<key>hinttext_action_53</key>
+	<string>请抬头
+随后正对屏幕</string>
+	<key>hinttext_action_52</key>
+	<string>请缓慢右转
+随后正对屏幕</string>
+	<key>hinttext_action_51</key>
+	<string>请缓慢左转
+随后正对屏幕</string>
+	<key>hinttext_action_3</key>
+	<string>请眨眼
+随后睁眼</string>
+	<key>hinttext_action_1</key>
+	<string>请张嘴</string>
+	<key>hinttext_action_50</key>
+	<string>请正对屏幕</string>
+</dict>
+</plist>

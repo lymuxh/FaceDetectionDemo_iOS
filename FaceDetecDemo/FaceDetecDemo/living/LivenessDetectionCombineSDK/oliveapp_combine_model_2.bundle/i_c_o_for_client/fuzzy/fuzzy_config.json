@@ -1,0 +1,17 @@
+{
+  "model_dir" : "i_c_o_for_client/fuzzy/",
+  "model_list" : ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"],
+  "avg_threshold" : 0,
+  "min_threshold" : -0.9,
+  "attribute_name" : "face_idcard_fuzzy",
+  "lbp_extractor":
+  {
+    "rect_width": 50,
+    "rect_height": 80,
+    "lbp_h_blocks": 8,
+    "lbp_w_blocks": 5,
+    "lbp_radius": 2,
+    "lbp_point_number": 8,
+    "lbp_enable_uniform_mode": true
+  }
+}

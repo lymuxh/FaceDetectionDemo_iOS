@@ -1,0 +1,12 @@
+{
+    "threshold_strong" : 0.87,
+    "scale_strong" : 0.45,
+    "radius_strong" : 0.8,
+
+    "threshold_dark" : 0.20,
+    "scale_dark" : 0.6,
+    "radius_dark" : 0.8,
+
+    "threshold_uneven" : 0.05,
+    "radius_uneven" : 0.8
+}

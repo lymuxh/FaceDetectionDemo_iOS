@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Oliveapp Liveness Detection View Controller-->
+        <scene sceneID="nWC-M4-4xK">
+            <objects>
+                <viewController storyboardIdentifier="LivenessDetectionStoryboard" useStoryboardIdentifierAsRestorationIdentifier="YES" id="stP-DW-cnL" customClass="OliveappLivenessDetectionViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5gp-40-rTF"/>
+                        <viewControllerLayoutGuide type="bottom" id="MBb-gO-fvR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="T5N-KS-SrH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IN1-2m-Vzu">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="oliveapp_bg_ipad.png" translatesAutoresizingMaskIntoConstraints="NO" id="fUN-jf-OKu">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="oliveapp_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="mj5-B5-jDs">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="APb-qg-702">
+                                <rect key="frame" x="913.5" y="44" width="29.5" height="29.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="APb-qg-702" secondAttribute="height" multiplier="1:1" id="Hko-eH-fcr"/>
+                                </constraints>
+                                <state key="normal" image="oliveapp_close.png"/>
+                                <connections>
+                                    <action selector="touchCancelLiveness:" destination="stP-DW-cnL" eventType="touchUpInside" id="1GI-Ql-RlT"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="oliveapp_left_frame.png" translatesAutoresizingMaskIntoConstraints="NO" id="76f-6Y-X82" customClass="OliveappYellowFrame">
+                                <rect key="frame" x="436" y="180" width="7.5" height="7.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="76f-6Y-X82" secondAttribute="height" multiplier="1:1" id="ft8-rJ-EtZ"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="oliveapp_right_frame.png" translatesAutoresizingMaskIntoConstraints="NO" id="Foi-Re-ysL" customClass="OliveappYellowFrame">
+                                <rect key="frame" x="580.5" y="134.5" width="7.5" height="7"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Foi-Re-ysL" secondAttribute="height" multiplier="1:1" id="beH-Fn-v2R"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="请正对屏幕" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GEx-dq-irQ" customClass="OliveappHintView">
+                                <rect key="frame" x="448.5" y="141.5" width="127" height="38.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <color key="textColor" red="0.99574238061904907" green="0.88243955373764038" blue="0.20452141761779785" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="oliveapp_aperture.png" translatesAutoresizingMaskIntoConstraints="NO" id="WRk-eu-iZE" customClass="OliveappBlueFrame">
+                                <rect key="frame" x="347" y="204" width="330" height="330"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="WRk-eu-iZE" secondAttribute="height" multiplier="1:1" id="EcP-if-ZyF"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="skZ-9c-byC">
+                                <rect key="frame" x="20" y="20" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M58-fA-129">
+                                <rect key="frame" x="1004" y="748" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="52"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="fUN-jf-OKu" firstAttribute="centerY" secondItem="T5N-KS-SrH" secondAttribute="centerY" id="45z-Vz-uxZ"/>
+                            <constraint firstItem="WRk-eu-iZE" firstAttribute="centerY" secondItem="T5N-KS-SrH" secondAttribute="centerY" multiplier="0.961" id="5In-8p-x56"/>
+                            <constraint firstItem="fUN-jf-OKu" firstAttribute="height" secondItem="T5N-KS-SrH" secondAttribute="height" id="7Hu-pR-1zr"/>
+                            <constraint firstItem="GEx-dq-irQ" firstAttribute="height" secondItem="T5N-KS-SrH" secondAttribute="height" multiplier="0.05" id="7eK-rR-H8w"/>
+                            <constraint firstItem="WRk-eu-iZE" firstAttribute="height" secondItem="T5N-KS-SrH" secondAttribute="height" multiplier="0.43" id="8Pe-Pu-BoA"/>
+                            <constraint firstItem="76f-6Y-X82" firstAttribute="top" secondItem="GEx-dq-irQ" secondAttribute="bottom" id="9jr-d1-LMm"/>
+                            <constraint firstAttribute="bottom" secondItem="IN1-2m-Vzu" secondAttribute="bottom" id="DYj-5j-j2F"/>
+                            <constraint firstItem="WRk-eu-iZE" firstAttribute="height" secondItem="T5N-KS-SrH" secondAttribute="height" multiplier="0.412" id="EaL-Ya-bqB"/>
+                            <constraint firstItem="IN1-2m-Vzu" firstAttribute="top" secondItem="T5N-KS-SrH" secondAttribute="top" id="G3n-PJ-6ua"/>
+                            <constraint firstItem="WRk-eu-iZE" firstAttribute="centerX" secondItem="T5N-KS-SrH" secondAttribute="centerX" id="GTq-Qc-JPh"/>
+                            <constraint firstItem="Foi-Re-ysL" firstAttribute="width" secondItem="76f-6Y-X82" secondAttribute="width" id="KPm-V4-fds"/>
+                            <constraint firstItem="mj5-B5-jDs" firstAttribute="top" secondItem="T5N-KS-SrH" secondAttribute="top" id="LKM-aS-tgY"/>
+                            <constraint firstItem="APb-qg-702" firstAttribute="centerY" secondItem="T5N-KS-SrH" secondAttribute="centerY" multiplier="0.153" id="NJq-a4-Aih"/>
+                            <constraint firstAttribute="trailing" secondItem="IN1-2m-Vzu" secondAttribute="trailing" id="NV2-lk-ccV"/>
+                            <constraint firstItem="WRk-eu-iZE" firstAttribute="top" secondItem="GEx-dq-irQ" secondAttribute="bottom" constant="24" id="Qe0-9f-Qpd"/>
+                            <constraint firstItem="GEx-dq-irQ" firstAttribute="centerX" secondItem="T5N-KS-SrH" secondAttribute="centerX" id="Qjq-Xf-HV6"/>
+                            <constraint firstItem="GEx-dq-irQ" firstAttribute="top" secondItem="Foi-Re-ysL" secondAttribute="bottom" id="RDg-S6-sAf"/>
+                            <constraint firstItem="mj5-B5-jDs" firstAttribute="leading" secondItem="T5N-KS-SrH" secondAttribute="leading" id="RT2-bR-2kQ"/>
+                            <constraint firstItem="MBb-gO-fvR" firstAttribute="top" secondItem="M58-fA-129" secondAttribute="bottom" constant="20" id="RbN-GI-nzS"/>
+                            <constraint firstItem="APb-qg-702" firstAttribute="height" secondItem="T5N-KS-SrH" secondAttribute="height" multiplier="0.039" id="TLR-rg-yHS"/>
+                            <constraint firstItem="GEx-dq-irQ" firstAttribute="leading" secondItem="76f-6Y-X82" secondAttribute="trailing" constant="5" id="TrK-z2-f9b"/>
+                            <constraint firstItem="skZ-9c-byC" firstAttribute="top" secondItem="5gp-40-rTF" secondAttribute="bottom" id="Us1-il-cnP"/>
+                            <constraint firstAttribute="bottom" secondItem="mj5-B5-jDs" secondAttribute="bottom" id="YfR-4h-RKa"/>
+                            <constraint firstItem="APb-qg-702" firstAttribute="centerX" secondItem="T5N-KS-SrH" secondAttribute="centerX" multiplier="1.8133" id="aIE-CB-y5K"/>
+                            <constraint firstAttribute="trailing" secondItem="mj5-B5-jDs" secondAttribute="trailing" id="cKR-kf-p0y"/>
+                            <constraint firstItem="fUN-jf-OKu" firstAttribute="centerX" secondItem="T5N-KS-SrH" secondAttribute="centerX" id="dd7-JO-lQ2"/>
+                            <constraint firstItem="IN1-2m-Vzu" firstAttribute="leading" secondItem="T5N-KS-SrH" secondAttribute="leading" id="k8z-6v-flJ"/>
+                            <constraint firstItem="Foi-Re-ysL" firstAttribute="leading" secondItem="GEx-dq-irQ" secondAttribute="trailing" constant="5" id="nVr-GJ-1ob"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="skZ-9c-byC" secondAttribute="leading" id="rrd-0D-oCu"/>
+                            <constraint firstItem="76f-6Y-X82" firstAttribute="height" secondItem="GEx-dq-irQ" secondAttribute="height" multiplier="0.2" id="tJE-sE-Gy5"/>
+                            <constraint firstItem="fUN-jf-OKu" firstAttribute="width" secondItem="T5N-KS-SrH" secondAttribute="width" id="v2y-1c-Zb7"/>
+                            <constraint firstAttribute="trailing" secondItem="M58-fA-129" secondAttribute="trailing" constant="20" id="yi2-oV-fq1"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="fUN-jf-OKu"/>
+                                <exclude reference="mj5-B5-jDs"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="8Pe-Pu-BoA"/>
+                                <exclude reference="EaL-Ya-bqB"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="mj5-B5-jDs"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="EaL-Ya-bqB"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="subviews">
+                                <include reference="fUN-jf-OKu"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="8Pe-Pu-BoA"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="hVM-25-B8e"/>
+                    <connections>
+                        <outlet property="mBlueFrame" destination="WRk-eu-iZE" id="Uyc-9c-Xt3"/>
+                        <outlet property="mCameraPreview" destination="IN1-2m-Vzu" id="FIT-7v-THR"/>
+                        <outlet property="mCountDownUILabel" destination="M58-fA-129" id="B0l-Ub-uW6"/>
+                        <outlet property="mFrameLabel" destination="skZ-9c-byC" id="uRt-6h-T1l"/>
+                        <outlet property="mHintView" destination="GEx-dq-irQ" id="j53-2t-CnF"/>
+                        <outlet property="mLeftDownYellowFrame" destination="76f-6Y-X82" id="OTc-Uc-2pb"/>
+                        <outlet property="mRightUpYellowFrame" destination="Foi-Re-ysL" id="VyT-jh-xx2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="khb-Yo-8tQ" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-980" y="-46"/>
+        </scene>
+        <!--Oliveapp Liveness Detection View Controller-->
+        <scene sceneID="NxT-BS-r3Y">
+            <objects>
+                <viewController storyboardIdentifier="LivenessDetectionStoryboardLandspace" useStoryboardIdentifierAsRestorationIdentifier="YES" id="cvb-je-V93" customClass="OliveappLivenessDetectionViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cm7-5N-Glo"/>
+                        <viewControllerLayoutGuide type="bottom" id="xp7-MS-0lm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vCO-Sj-wtf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BHy-94-UL5">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="oliveapp_bg_landscape.png" translatesAutoresizingMaskIntoConstraints="NO" id="2bd-KF-FFj">
+                                <rect key="frame" x="-406" y="0.0" width="1187" height="667"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="2bd-KF-FFj" secondAttribute="height" multiplier="16:9" id="m1w-6y-Oee"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NIj-35-a5a">
+                                <rect key="frame" x="316" y="27" width="48" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="NIj-35-a5a" secondAttribute="height" multiplier="1:1" id="KmY-16-Qs8"/>
+                                </constraints>
+                                <state key="normal" image="oliveapp_close_landscape.png"/>
+                                <connections>
+                                    <action selector="touchCancelLiveness:" destination="cvb-je-V93" eventType="touchUpInside" id="4u2-bh-Sel"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请正对屏幕" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oov-Vq-6zF" customClass="OliveappHintView">
+                                <rect key="frame" x="124" y="184" width="127" height="33"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <color key="textColor" red="0.99215686274509807" green="0.8666666666666667" blue="0.16078431372549018" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="oliveapp_frame_landscape.png" translatesAutoresizingMaskIntoConstraints="NO" id="mA9-eh-tiI" customClass="OliveappBlueFrame">
+                                <rect key="frame" x="1" y="147" width="374" height="374"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="mA9-eh-tiI" secondAttribute="height" multiplier="1:1" id="MFp-AR-T5D"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="oliveapp_left_frame_landscape.png" translatesAutoresizingMaskIntoConstraints="NO" id="WAd-l1-Ea0" customClass="OliveappYellowFrame">
+                                <rect key="frame" x="113" y="217" width="6" height="7"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="WAd-l1-Ea0" secondAttribute="height" multiplier="1:1" id="SsS-05-s7h"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZRq-or-J3N">
+                                <rect key="frame" x="16" y="28" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ILW-WI-0Ew">
+                                <rect key="frame" x="355" y="647" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="70"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="oliveapp_right_frame_landscape.png" translatesAutoresizingMaskIntoConstraints="NO" id="vbp-IT-103" customClass="OliveappYellowFrame">
+                                <rect key="frame" x="256" y="177" width="7" height="7"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="WAd-l1-Ea0" firstAttribute="top" secondItem="oov-Vq-6zF" secondAttribute="bottom" id="7Nk-PH-kd5"/>
+                            <constraint firstItem="vbp-IT-103" firstAttribute="width" secondItem="WAd-l1-Ea0" secondAttribute="width" id="9II-fH-Dl6"/>
+                            <constraint firstItem="mA9-eh-tiI" firstAttribute="centerX" secondItem="vCO-Sj-wtf" secondAttribute="centerX" id="CWy-cP-MBi"/>
+                            <constraint firstItem="WAd-l1-Ea0" firstAttribute="height" secondItem="oov-Vq-6zF" secondAttribute="height" multiplier="0.2" id="Ckq-KI-Iym"/>
+                            <constraint firstItem="NIj-35-a5a" firstAttribute="height" secondItem="vCO-Sj-wtf" secondAttribute="height" multiplier="0.072" id="D2O-xT-naM"/>
+                            <constraint firstItem="oov-Vq-6zF" firstAttribute="centerX" secondItem="vCO-Sj-wtf" secondAttribute="centerX" id="Emt-ak-dln"/>
+                            <constraint firstItem="oov-Vq-6zF" firstAttribute="height" secondItem="vCO-Sj-wtf" secondAttribute="height" multiplier="0.05" id="F9W-e8-tex"/>
+                            <constraint firstItem="vbp-IT-103" firstAttribute="leading" secondItem="oov-Vq-6zF" secondAttribute="trailing" constant="5" id="GVq-SV-LV8"/>
+                            <constraint firstAttribute="trailing" secondItem="BHy-94-UL5" secondAttribute="trailing" id="Prv-if-m6J"/>
+                            <constraint firstItem="mA9-eh-tiI" firstAttribute="height" secondItem="vCO-Sj-wtf" secondAttribute="height" multiplier="0.56" id="SKk-7h-qE5"/>
+                            <constraint firstItem="xp7-MS-0lm" firstAttribute="top" secondItem="ILW-WI-0Ew" secondAttribute="bottom" constant="20" id="UJx-0O-uOf"/>
+                            <constraint firstItem="BHy-94-UL5" firstAttribute="leading" secondItem="vCO-Sj-wtf" secondAttribute="leading" id="VUT-ua-sC4"/>
+                            <constraint firstItem="NIj-35-a5a" firstAttribute="centerY" secondItem="vCO-Sj-wtf" secondAttribute="centerY" multiplier="0.153" id="Y3r-GH-Rhw"/>
+                            <constraint firstItem="2bd-KF-FFj" firstAttribute="centerX" secondItem="vCO-Sj-wtf" secondAttribute="centerX" id="Yea-2B-uaQ"/>
+                            <constraint firstItem="BHy-94-UL5" firstAttribute="top" secondItem="vCO-Sj-wtf" secondAttribute="top" id="dJM-kB-mib"/>
+                            <constraint firstItem="2bd-KF-FFj" firstAttribute="height" secondItem="BHy-94-UL5" secondAttribute="height" id="gEt-LA-WWW"/>
+                            <constraint firstItem="oov-Vq-6zF" firstAttribute="leading" secondItem="WAd-l1-Ea0" secondAttribute="trailing" constant="5" id="hDw-H0-8oL"/>
+                            <constraint firstItem="ZRq-or-J3N" firstAttribute="top" secondItem="cm7-5N-Glo" secondAttribute="bottom" constant="8" id="kaM-JH-xBd"/>
+                            <constraint firstItem="NIj-35-a5a" firstAttribute="centerX" secondItem="vCO-Sj-wtf" secondAttribute="centerX" multiplier="1.8133" id="lfy-dw-pp5"/>
+                            <constraint firstAttribute="bottom" secondItem="BHy-94-UL5" secondAttribute="bottom" id="li5-FB-mnQ"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="ZRq-or-J3N" secondAttribute="leading" id="oVg-5R-XyO"/>
+                            <constraint firstItem="vbp-IT-103" firstAttribute="bottom" secondItem="oov-Vq-6zF" secondAttribute="top" id="r1s-D0-h9b"/>
+                            <constraint firstItem="mA9-eh-tiI" firstAttribute="centerY" secondItem="vCO-Sj-wtf" secondAttribute="centerY" id="teT-MY-EcP"/>
+                            <constraint firstItem="vbp-IT-103" firstAttribute="height" secondItem="WAd-l1-Ea0" secondAttribute="height" id="uwN-uN-Izh"/>
+                            <constraint firstItem="2bd-KF-FFj" firstAttribute="centerY" secondItem="vCO-Sj-wtf" secondAttribute="centerY" id="vXf-ZI-1tQ"/>
+                            <constraint firstAttribute="trailing" secondItem="ILW-WI-0Ew" secondAttribute="trailing" constant="20" id="x7y-oO-mWX"/>
+                            <constraint firstItem="oov-Vq-6zF" firstAttribute="centerY" secondItem="vCO-Sj-wtf" secondAttribute="centerY" multiplier="0.6" id="xNN-vY-Zxx"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="LX1-Jk-lk8"/>
+                    <connections>
+                        <outlet property="mBlueFrame" destination="mA9-eh-tiI" id="YFU-i7-N77"/>
+                        <outlet property="mCameraPreview" destination="BHy-94-UL5" id="pJF-H5-Fci"/>
+                        <outlet property="mCountDownUILabel" destination="ILW-WI-0Ew" id="y7c-ts-Jyx"/>
+                        <outlet property="mFrameLabel" destination="ZRq-or-J3N" id="xoZ-sw-Qpe"/>
+                        <outlet property="mHintView" destination="oov-Vq-6zF" id="dBD-6Z-e01"/>
+                        <outlet property="mLeftDownYellowFrame" destination="WAd-l1-Ea0" id="t5y-dO-j6D"/>
+                        <outlet property="mRightUpYellowFrame" destination="vbp-IT-103" id="Vea-cO-CGo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dJF-T8-g5s" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-63" y="-46"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="oliveapp_aperture.png" width="554" height="554"/>
+        <image name="oliveapp_bg.png" width="750" height="1334"/>
+        <image name="oliveapp_bg_ipad.png" width="960" height="1280"/>
+        <image name="oliveapp_bg_landscape.png" width="2048" height="1536"/>
+        <image name="oliveapp_close.png" width="52" height="52"/>
+        <image name="oliveapp_close_landscape.png" width="78" height="78"/>
+        <image name="oliveapp_frame_landscape.png" width="646" height="646"/>
+        <image name="oliveapp_left_frame.png" width="16" height="16"/>
+        <image name="oliveapp_left_frame_landscape.png" width="25" height="24"/>
+        <image name="oliveapp_right_frame.png" width="16" height="16"/>
+        <image name="oliveapp_right_frame_landscape.png" width="25" height="24"/>
+    </resources>
+</document>

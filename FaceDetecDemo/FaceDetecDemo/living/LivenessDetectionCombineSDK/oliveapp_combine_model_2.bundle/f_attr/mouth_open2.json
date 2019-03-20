@@ -1,0 +1,16 @@
+{
+    "threshold": 0.40181,
+    "attribute_name": "mouth_open",
+    "model_file": "./f_attr/mouth_open2.compress",
+    "open_or_close": "open",
+    "lbp_extractor": {
+        "lbp_h_blocks": 4,
+        "lbp_w_blocks": 4,
+        "rect_width": 99, 
+        "rect_height": 75,
+
+        "lbp_radius": 4,
+        "lbp_point_number": 8,
+        "lbp_enable_uniform_mode": false 
+    }
+}

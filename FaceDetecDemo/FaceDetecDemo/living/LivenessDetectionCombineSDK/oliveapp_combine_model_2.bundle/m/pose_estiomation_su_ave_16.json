@@ -1,0 +1,36 @@
+{
+    "is_fast_mode": false,
+    "is_pose_estimation_mode": true,
+	"Face3d" : "./f_n/010-001",
+	"order" : "./f_n/alignment_order.json",
+	"is_multi_pose" : false,
+	"rot_x" : 20,
+	"rot_y" : 0,
+	"rot_z" : 0,
+	"background_triangles" : "./f_n/triangles.txt",
+
+	"person" : ["./f_n/010-001"],
+	"pnp_landmarks" : [
+		"left_eye_left", "left_eye_right", "right_eye_left", "right_eye_right",
+		"nose_left", "nose_right",
+		"mouth_left", "mouth_right", "mouth_top_lip_down", "mouth_bottom_lip_up",
+		"down_out_profile_01", "down_out_profile_03", "chin", "down_out_profile_06", "down_out_profile_08", "up_out_profile_06"
+	],
+
+	"average_face" : "./f_n/S_M_F.json",
+	"average_face_w" : 300,
+	"average_face_h" : 300,
+
+	"normalized_face_w" : 480,
+	"normalized_face_h" : 480,
+	"output_face_w" : 300,
+	"output_face_h" : 300,
+	"crop_face_x" : 50,
+	"crop_face_y" : 30,
+	"crop_face_w" : 380,
+	"crop_face_h" : 380,
+
+	"mapping_file" : "invalid",
+	"mapping_binsize" : 1,
+	"mapping_ratio_score" : 0.775
+}

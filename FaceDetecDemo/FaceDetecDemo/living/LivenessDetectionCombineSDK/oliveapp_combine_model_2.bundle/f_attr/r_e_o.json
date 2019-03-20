@@ -1,0 +1,17 @@
+{
+    "threshold": 0.82,
+    "convert_result": false,
+    "left_or_right_eye": "right",
+    "attribute_name": "right_eye_open",
+    "model_file": "./f_attr/e_o.model",
+    "lbp_extractor": {
+        "lbp_h_blocks": 2,
+        "lbp_w_blocks": 6,
+        "rect_width": 60, 
+        "rect_height": 30,
+
+        "lbp_radius": 5,
+        "lbp_point_number": 8,
+        "lbp_enable_uniform_mode": false 
+    }
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>audio_action_0</key>
+    <string>oliveapp_step_hint_getready</string>
+    <key>audio_action_3</key>
+    <string>oliveapp_step_hint_eyeclose</string>
+    <key>audio_action_1</key>
+    <string>oliveapp_step_hint_mouthopen</string>
+    <key>audio_action_51</key>
+    <string>oliveapp_step_hint_headleft</string>
+    <key>audio_action_52</key>
+    <string>oliveapp_step_hint_headright</string>
+    <key>audio_action_53</key>
+    <string>oliveapp_step_hint_headup</string>
+    <key>audio_action_54</key>
+    <string>oliveapp_step_hint_headdown</string>
+    <key>audio_action_60</key>
+    <string>oliveapp_step_hint_headshake</string>
+</dict>
+</plist>
